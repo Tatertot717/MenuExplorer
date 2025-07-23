@@ -29,17 +29,37 @@ public class MenuExplorer {
 
 	private final Map<Integer, Set<Integer>> parentMap = new HashMap<>();
 
+	/**
+	 * Constructs a new MenuExplorer by loading menu data from the specified JSON
+	 * file.
+	 *
+	 * @param filePath the path to the JSON file containing menu data
+	 * @throws FileNotFoundException if the specified file does not exist
+	 */
 	public MenuExplorer(String filePath) throws FileNotFoundException {
 		loadJsonData(filePath);
 		buildParentMap();
 	}
 
+	/**
+	 * Adds multiple items to the order by calling {@code addToOrder} for each item
+	 * ID.
+	 *
+	 * @param ids   the list of item IDs to add
+	 * @param order the current order to modify
+	 */
 	public void addMultipleToOrder(List<Integer> ids, List<Integer> order) {
 		for (int id : ids) {
 			addToOrder(id, order);
 		}
 	}
 
+	/**
+	 * Adds a single item to the given order list based on configuration rules.
+	 *
+	 * @param id    the ID of the item to add
+	 * @param order the current order to modify
+	 */
 	public void addToOrder(int id, List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return;
@@ -79,7 +99,7 @@ public class MenuExplorer {
 				JsonObject selections = parentRef.has("Selections") ? parentRef.getAsJsonObject("Selections") : null;
 				Integer max = (selections != null && selections.has("Max") && !selections.get("Max").isJsonNull())
 						? selections.get("Max").getAsInt()
-								: null;
+						: null;
 
 				Set<Integer> subIds = getSubIdsUnder(order.get(0), parentId);
 				long selectedCount = order.stream().filter(subIds::contains).count();
@@ -113,7 +133,7 @@ public class MenuExplorer {
 			JsonObject selections = split.has("Selections") ? split.getAsJsonObject("Selections") : null;
 			Integer max = (selections != null && selections.has("Max") && !selections.get("Max").isJsonNull())
 					? selections.get("Max").getAsInt()
-							: null;
+					: null;
 
 			if (max == null) {
 				shouldPrune = false; // Unlimited selections
@@ -257,7 +277,7 @@ public class MenuExplorer {
 		}
 	}
 
-	public List<Integer> findDeepestMatchingChain(List<Integer> pathToRoot, List<Integer> order) {
+	private List<Integer> findDeepestMatchingChain(List<Integer> pathToRoot, List<Integer> order) {
 		Set<Integer> orderSet = new HashSet<>(order); // For fast lookup
 		List<Integer> result = new ArrayList<>();
 
@@ -298,6 +318,13 @@ public class MenuExplorer {
 		return count == 1 ? " *selected*" : " *selected " + count + "x*";
 	}
 
+	/**
+	 * Gets all nested item IDs under a specified product, including all
+	 * descendants.
+	 *
+	 * @param rootId the product ID to search under
+	 * @return a set of all descendant item IDs
+	 */
 	public Set<Integer> getAllSubIds(int rootId) {
 		Set<Integer> subIds = new HashSet<>();
 		JsonObject root = getProductById(rootId);
@@ -307,10 +334,20 @@ public class MenuExplorer {
 		return subIds;
 	}
 
+	/**
+	 * Returns the current cart (list of all orders).
+	 *
+	 * @return the cart containing all current orders
+	 */
 	public List<List<Integer>> getCart() {
 		return cart;
 	}
 
+	/**
+	 * Calculates the total price of all orders in the cart.
+	 *
+	 * @return the total cart price
+	 */
 	public int getCartTotalPrice() {
 		int totalPrice = 0;
 		for (List<Integer> order : cart) {
@@ -319,6 +356,30 @@ public class MenuExplorer {
 		return totalPrice;
 	}
 
+	/**
+	 * Retrieves the description of a product based on its ID.
+	 *
+	 * @param id the product ID
+	 * @return the product description, or an error message if not found
+	 */
+	public String getDescriptionFromId(int id) {
+		JsonObject product = refs.get(String.valueOf(id));
+		if (product != null) {
+			if (product.has("Description")) {
+				return product.get("Description").toString();
+			} else {
+				return "No Description";
+			}
+		}
+		return "Invalid Item";
+	}
+
+	/**
+	 * Calculates the total price of a single order.
+	 *
+	 * @param order the order to calculate price for
+	 * @return the total price of the order
+	 */
 	public int getOrderPrice(List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return 0;
@@ -340,6 +401,12 @@ public class MenuExplorer {
 		return totalPrice;
 	}
 
+	/**
+	 * Finds and returns the product JSON object with the given ID.
+	 *
+	 * @param id the product ID
+	 * @return the JSON object for the product, or null if not found
+	 */
 	public JsonObject getProductById(int id) {
 		for (JsonObject product : products) {
 			if (product.has("Id") && product.get("Id").getAsInt() == id) {
@@ -357,6 +424,13 @@ public class MenuExplorer {
 		return refs.get(id);
 	}
 
+	/**
+	 * Gets all nested item IDs under a specified cutoff node within a base product.
+	 *
+	 * @param baseId   the base product ID
+	 * @param cutoffId the node ID under which to collect sub-IDs
+	 * @return a set of descendant item IDs under the cutoff node
+	 */
 	public Set<Integer> getSubIdsUnder(int baseId, int cutoffId) {
 		JsonObject base = getProductById(baseId);
 		if (base == null) {
@@ -381,6 +455,12 @@ public class MenuExplorer {
 				.collect(Collectors.toList());
 	}
 
+	/**
+	 * Retrieves the title of a product based on its ID.
+	 *
+	 * @param id the product ID
+	 * @return the product title, or "Unknown" if not found
+	 */
 	public String getTitleForId(int id) {
 		JsonObject ref = refs.get(String.valueOf(id));
 		if (ref != null && ref.has("Title")) {
@@ -394,7 +474,7 @@ public class MenuExplorer {
 				&& obj.get("Checked").getAsBoolean();
 	}
 
-	public void loadJsonData(String filePath) throws FileNotFoundException {
+	private void loadJsonData(String filePath) throws FileNotFoundException {
 		Gson gson = new Gson();
 		JsonObject root = gson.fromJson(new FileReader(filePath), JsonObject.class);
 
@@ -410,7 +490,7 @@ public class MenuExplorer {
 		products.addAll(gson.fromJson(root.getAsJsonArray("Products"), listType));
 	}
 
-	public List<Integer> pathToRoot(int targetId, List<Integer> order) {
+	private List<Integer> pathToRoot(int targetId, List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return Collections.emptyList();
 		}
@@ -424,6 +504,11 @@ public class MenuExplorer {
 		return found ? path : Collections.emptyList();
 	}
 
+	/**
+	 * Prints all orders in the cart in a human-readable format.
+	 *
+	 * @return a formatted string showing each order and the cart total
+	 */
 	public String printCart() {
 		if (cart.isEmpty()) {
 			return "Cart is empty.";
@@ -441,6 +526,13 @@ public class MenuExplorer {
 		return sb.toString();
 	}
 
+	/**
+	 * Prints a single order in a readable format, including selected options and
+	 * price.
+	 *
+	 * @param order the order to print
+	 * @return a formatted string representing the order
+	 */
 	public String printOrder(List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return "No order, start one";
@@ -456,13 +548,20 @@ public class MenuExplorer {
 		Map<Integer, Long> counts = order.stream().collect(Collectors.groupingBy(i -> i, Collectors.counting()));
 
 		sb.append("-- ").append(getTitleForId(rootId)).append(" (id ").append(rootId).append(")")
-		.append(formatSelectionSuffix(counts.get(rootId))).append("\n");
+				.append(formatSelectionSuffix(counts.get(rootId))).append("\n");
 
 		printOrderRecursive(root, counts, 1, sb);
 		sb.append("Order Price: " + getOrderPrice(order));
 		return sb.toString();
 	}
 
+	/**
+	 * Prints the full menu structure for a given order, including all configurable
+	 * options.
+	 *
+	 * @param order the order to display options for
+	 * @return a formatted string showing all selectable options
+	 */
 	public String printOrderOptions(List<Integer> order) {
 		int rootId = order.get(0);
 		JsonObject root = getProductById(rootId);
@@ -474,7 +573,7 @@ public class MenuExplorer {
 		Map<Integer, Long> counts = order.stream().collect(Collectors.groupingBy(i -> i, Collectors.counting()));
 
 		sb.append("-- ").append(getTitleForId(rootId)).append(" (id ").append(rootId).append(")")
-		.append(formatSelectionSuffix(counts.get(rootId))).append("\n");
+				.append(formatSelectionSuffix(counts.get(rootId))).append("\n");
 
 		printTreeRecursive(root, counts, 1, sb);
 		return sb.toString();
@@ -492,7 +591,7 @@ public class MenuExplorer {
 
 					if (count != null && count > 0) {
 						sb.append(indentStr).append("-- ").append(getTitleForId(id)).append(" (id ").append(id)
-						.append(")").append(formatSelectionSuffix(count)).append("\n");
+								.append(")").append(formatSelectionSuffix(count)).append("\n");
 
 						printOrderRecursive(child, counts, indent + 1, sb);
 					}
@@ -509,7 +608,7 @@ public class MenuExplorer {
 					JsonObject child = el.getAsJsonObject();
 					int id = child.get("Id").getAsInt();
 					sb.append(indentStr).append("-- ").append(getTitleForId(id)).append(" (id ").append(id).append(")")
-					.append(formatSelectionSuffix(counts.get(id))).append("\n");
+							.append(formatSelectionSuffix(counts.get(id))).append("\n");
 
 					printTreeRecursive(child, counts, indent + 1, sb);
 				}
@@ -517,6 +616,12 @@ public class MenuExplorer {
 		}
 	}
 
+	/**
+	 * Removes an item (or its subtree) from the given order based on its structure.
+	 *
+	 * @param id    the ID of the item to remove
+	 * @param order the current order to modify
+	 */
 	public void removeFromOrder(int id, List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return;
@@ -589,12 +694,23 @@ public class MenuExplorer {
 		}
 	}
 
+	/**
+	 * Removes multiple items from the given order.
+	 *
+	 * @param ids   the list of item IDs to remove
+	 * @param order the current order to modify
+	 */
 	public void removeMultipleFromOrder(List<Integer> ids, List<Integer> order) {
 		for (int id : ids) {
 			removeFromOrder(id, order);
 		}
 	}
 
+	/**
+	 * Removes the given order from the cart.
+	 *
+	 * @param order the order to remove
+	 */
 	public void removeOrder(List<Integer> order) {
 		if (order == null || order.isEmpty() || cart.isEmpty()) {
 			return;
@@ -602,7 +718,7 @@ public class MenuExplorer {
 		cart.remove(order);
 	}
 
-	public List<Integer> removeSubtreeFromOrder(int cutoffId, List<Integer> order) {
+	private List<Integer> removeSubtreeFromOrder(int cutoffId, List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return order;
 		}
@@ -612,6 +728,13 @@ public class MenuExplorer {
 		return order.stream().filter(id -> !subIds.contains(id)).collect(Collectors.toList());
 	}
 
+	/**
+	 * Starts a new order with the given root product ID, applying any default
+	 * selections.
+	 *
+	 * @param rootId the root product ID to start the order with
+	 * @return a list of selected item IDs representing the new order
+	 */
 	public List<Integer> startOrder(int rootId) {
 		List<Integer> order = new ArrayList<>();
 		order.add(rootId); // Start with the main product

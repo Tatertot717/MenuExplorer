@@ -19,7 +19,7 @@ public class MenuExplorerMain {
 			e.printStackTrace();
 			return;
 		}
-
+		System.out.println(explorer.getDescriptionFromId(4));
 		System.out.println("Menu Explorer CLI started. Type 'help' for list of commands.");
 
 		while (true) {
@@ -116,7 +116,7 @@ public class MenuExplorerMain {
 							System.out.println("Invalid choice.");
 							break;
 						}
-							
+
 						order = cart.get(id - 1);
 						System.out.println("Switched to active order " + id);
 					}
@@ -160,8 +160,8 @@ public class MenuExplorerMain {
 
 /*
  * public static void main(String[] args) { MenuExplorer explorer; try {
- * explorer = new
- * MenuExplorer("C:\\Users\\tate.smith\\Documents\\Projects\\Webscrape\\MAX\\maxmenu.json");
+ * explorer = new MenuExplorer(
+ * "C:\\Users\\tate.smith\\Documents\\Projects\\Webscrape\\MAX\\maxmenu.json");
  * } catch (FileNotFoundException e) { e.printStackTrace(); return; }
  * 
  * List<Integer> order = explorer.startOrder(14580); //end =
@@ -225,4 +225,4 @@ public class MenuExplorerMain {
  * configure System.out.println(explorer.getCartTotalPrice());
  * 
  * }
-*/
+ */
