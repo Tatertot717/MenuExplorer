@@ -1,7 +1,10 @@
 package teneo.MenuExplorer;
 
 import java.io.FileNotFoundException;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -10,16 +13,26 @@ public class MenuExplorerMain {
 	private static List<Integer> order = new ArrayList<>();
 	private static final Scanner scanner = new Scanner(System.in);
 	private static List<List<Integer>> cart;
+	private static boolean LOAD_MSS = true;
 
 	public static void main(String[] args) {
 		try {
+			if (LOAD_MSS) {
+			System.out.println("Loading model...");
+			Instant start = Instant.now();
+			MenuSmartSearch.loadModel("glove.2024.wikigiga.100d.zip"); // about 1gb in size, uncompressed
+			Instant end = Instant.now();
+
+			long secondsElapsed = Duration.between(start, end).getSeconds();
+			System.out.println("Finished loading model in: " + secondsElapsed + " seconds");
+			}
+
 			explorer = new MenuExplorer("C:\\Users\\tate.smith\\Documents\\Projects\\Webscrape\\MAX\\maxmenu.json");
 			cart = explorer.getCart();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 			return;
 		}
-		System.out.println(explorer.getDescriptionFromId(4));
 		System.out.println("Menu Explorer CLI started. Type 'help' for list of commands.");
 
 		while (true) {
@@ -121,7 +134,16 @@ public class MenuExplorerMain {
 						System.out.println("Switched to active order " + id);
 					}
 					break;
-
+					
+				case "sm":
+				case "search":
+					if (parts.length < 2) {
+						System.out.println("Usage: sm <query>");
+					} else {
+						System.out.println(explorer.searchTop10(String.join(" ", Arrays.copyOfRange(parts, 1, parts.length))));
+					}
+					break;
+					
 				case "ro":
 				case "removeorder":
 					explorer.removeOrder(order);
@@ -140,22 +162,25 @@ public class MenuExplorerMain {
 	}
 
 	private static void printHelp() {
-		System.out.println("""
-				Commands:
-				s <id>        - start order from root ID
-				a <id>        - add item to order
-				r <id>        - remove item from order
-				po            - print current order (just selected)
-				poo <id>      - print order options from root ID
-				pc            - print cart
-				prc           - print cart total price
-				pro           - print current order price
-				sao <id>      - switch to active order ID
-				ro <id>       - remove order ID
-				help          - show this help
-				q             - quit
-				""");
+		//text blocks not supported in java 11
+		System.out.println(
+				"Commands:\n" +
+				"  s <id>        - start order from root ID\n" +
+				"  a <id>        - add item to order\n" +
+				"  r <id>        - remove item from order\n" +
+				"  po            - print current order (just selected)\n" +
+				"  poo           - print order options from current order\n" +
+				"  pc            - print cart\n" +
+				"  prc           - print cart total price\n" +
+				"  pro           - print current order price\n" +
+				"  sao <id>      - switch to active order ID\n" +
+				"  ro            - remove current order\n" +
+				"  sm <query>    - search menu by natural language\n" +
+				"  help          - show this help\n" +
+				"  q             - quit"
+		);
 	}
+
 }
 
 /*

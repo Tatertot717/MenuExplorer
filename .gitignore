@@ -1,0 +1,43 @@
+# Maven build directory
+/target/
+/doc/
+
+# Logs
+*.log
+
+# Eclipse IDE
+.project
+.classpath
+.settings/
+*.launch
+
+# IntelliJ IDEA
+*.iml
+.idea/
+out/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Java crash logs
+hs_err_pid*
+replay_pid*
+
+# Environment files
+.env

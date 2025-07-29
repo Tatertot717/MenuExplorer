@@ -21,12 +21,14 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 
+import teneo.MenuExplorer.MenuSmartSearch.MenuItem;
+
 public class MenuExplorer {
 
 	private final Map<String, JsonObject> refs = new HashMap<>();
 	private final List<JsonObject> products = new ArrayList<>();
 	private final List<List<Integer>> cart = new ArrayList<>();
-
+	private final List<MenuItem> searchMenu = new ArrayList<>();
 	private final Map<Integer, Set<Integer>> parentMap = new HashMap<>();
 
 	/**
@@ -39,7 +41,37 @@ public class MenuExplorer {
 	public MenuExplorer(String filePath) throws FileNotFoundException {
 		loadJsonData(filePath);
 		buildParentMap();
+		if (MenuSmartSearch.searchEnabled() == true) {
+			for (JsonObject product : refs.values()) {
+				String title = product.get("Title").getAsString();
+				int id = product.get("Id").getAsInt();
+				MenuSmartSearch.addMenuItem(searchMenu, title, id);
+			}
+		}
 	}
+	
+	public String search(String query) {
+		if (MenuSmartSearch.searchEnabled()) {
+			return MenuSmartSearch.match(query, searchMenu).name;
+		}
+		return null;
+	}
+	
+	public String searchTop10(String query) {
+		if (MenuSmartSearch.searchEnabled()) {
+	        List<MenuItem> topMatches = MenuSmartSearch.matchTop10(query, searchMenu);
+	        StringBuilder result = new StringBuilder();
+	        for (MenuItem item : topMatches) {
+	            result.append(item.name)
+	                  .append(" - ")
+	                  .append(item.id)
+	                  .append("\n");
+	        }
+	        return result.toString().trim();
+		}
+		return null;
+	}
+
 
 	/**
 	 * Adds multiple items to the order by calling {@code addToOrder} for each item
@@ -250,7 +282,8 @@ public class MenuExplorer {
 					JsonObject child = el.getAsJsonObject();
 					if (child.has("Id")) {
 						int childId = child.get("Id").getAsInt();
-						parentMap.computeIfAbsent(childId, _ -> new HashSet<>()).add(parentId);
+						parentMap.computeIfAbsent(childId, throwaway -> new HashSet<>()).add(parentId);
+						//remove throwaway in future
 						buildParentMapRecursive(child, childId);
 					}
 				}
