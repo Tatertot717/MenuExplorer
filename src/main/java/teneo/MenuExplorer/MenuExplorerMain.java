@@ -13,21 +13,23 @@ public class MenuExplorerMain {
 	private static List<Integer> order = new ArrayList<>();
 	private static final Scanner scanner = new Scanner(System.in);
 	private static List<List<Integer>> cart;
-	private static boolean LOAD_MSS = true;
+	private static final boolean LOAD_MSS = true;
 
 	public static void main(String[] args) {
 		try {
 			if (LOAD_MSS) {
 			System.out.println("Loading model...");
 			Instant start = Instant.now();
-			MenuSmartSearch.loadModel("glove.2024.wikigiga.100d.zip"); // about 1gb in size, uncompressed
+			MenuSmartSearch.loadModel("./glove.2024.wikigiga.100d.zip"); // about 1gb in size, uncompressed
 			Instant end = Instant.now();
 
 			long secondsElapsed = Duration.between(start, end).getSeconds();
 			System.out.println("Finished loading model in: " + secondsElapsed + " seconds");
-			}
+				}
 
-			explorer = new MenuExplorer("C:\\Users\\tate.smith\\Documents\\Projects\\Webscrape\\MAX\\maxmenu.json");
+			explorer = new MenuExplorer("./maxmenu.json");
+			explorer.setNewMenuAllergens("./allergens.json");
+			
 			cart = explorer.getCart();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

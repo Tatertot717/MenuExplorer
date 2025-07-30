@@ -1,0 +1,6390 @@
+{
+  "sub_items": {
+    "Brioche bread": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "WHEAT flour, water, EGG*, sugar, rapeseed oil, invert sugar syrup, yeast, WHEAT gluten, concentrated BUTTER, skimmed milk powder, salt, natural flavouring, MILK PROTEIN, inactivated yeast, vegetable emulsifier (mono- and diglycerides of fatty acids), malted RYE FLOUR, colour (beta-carotene) *Free-range eggs. May contain traces of SESAME SEED."
+    },
+    "Grilloumi®": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Pasteurized cow's milk, salt, vegetable cheese enzyme"
+    },
+    "Cheddar Melted Cheese": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Cheddar (51%) (MILK), Cheese (MILK), Water, Butter (MILK), Skimmed MILK Powder, Melting Salt (E331), Natural Cheese Flavouring Sharp Cheddar (MILK), Whey Powder (MILK), MILK Protein, Salt, Acidity Regulator (E330), Colours (E160a, E160e), Anti-Caking Agents: Sunflower Lecithin."
+    },
+    "Yellow onion": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Yellow onion"
+    },
+    "Avocado": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Avocado diced, salt, antioxidant (E300), acidity regulator (E330)"
+    },
+    "Pickled red chili": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Sliced red chilli, sugar, vinegar, water, salt"
+    },
+    "Spicy Onion dressing": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, water, MUSTARD (water, MUSTARD SEED, sugar, vinegar, salt, aroma), pickled green jalapeño (jalapeño, water, vinegar, salt, garlic, stabiliser (E509)), egg yolk powder, salt, onion powder, vinegar, red wine vinegar, cream powder, milk sugar, garlic powder, yeast extract, parsley, cumin, flavouring, acidity regulators (E270, E330), preservatives (E202, E211)."
+    },
+    "Delifresh Plant Beef": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Textured WHEAT and SOY PROTEIN, coconut fat, water, rapeseed oil, emulsifier E461, pea starch, onion, garlic, apple, yeast extract, salt, black pepper, CELERY, coriander, mushroom powder, bamboo fibre, beetroot concentrate, natural flavouring, lemon juice"
+    },
+    "Crispy Supreme": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Water, Breading (Rapeseed Oil, Rice Flour, Chickpea Flour, Maize Starch, Maize Flour, Potato Starch, Salt, Dextrose, Stabiliser (E 450, E 500), Thickener (E 415)), Pea Protein* 13%, Vegetable Oils (Rapeseed, Shea), Stabiliser (E 461), Salt, Jalapeño, Natural Flavourings, Onion, Dextrose, Potato Fibre, Garlic, Black Pepper, Corn Starch, Flavouring, Lemon Juice Powder, Thyme, Vegetable Broth (Salt, Onion, Leek, Carrot Extract, Spices)"
+    },
+    "Big-bread Sesame": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "WHEAT flour, water, invert sugar, rapeseed oil, yeast, SESAME SEED, salt, vegetable emulsifier E471, wheat malt flour, flour treatment agent (E300)"
+    },
+    "Iceberg lettuce": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Iceberg lettuce"
+    },
+    "Original dressing": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, water, cucumber, sugar, onion, tomato paste, mustard seed, egg yolk, cauliflower, carrot, vinegar, salt, spices, vinegar, paprika, spice extract, modified starch, acidity regulator (citric acid), preservatives (sodium benzoate, potassium sorbate), flavouring."
+    },
+    "Pickles": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Cucumbers, vinegar, salt, texturizing agent, calcium chloride, natural flavoring."
+    },
+    "Sesame bread": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "WHEAT flour, water, rapeseed oil, invert sugar, potato flakes, yeast, SESAME SEED, WHEAT gluten, salt, vegetable protein (pea), vegetable emulsifier (E471), WHEAT malt flour, glucose syrup, rice flour, flour treatment agent (E300)."
+    },
+    "Plant-based mayonnaise": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil/oil, water, sugar, salt, vinegar/vinegar, modified potato starch/modified potato starch/potato starch, white wine vinegar/white wine vinegar, MUSTARD SEED/MUSTARD SEED, ANTIOXIDANT/THICKENER (E330), thickener/thickener (E412, E415), preservative/agent (E202, E211), flavouring."
+    },
+    "Jalapeñorelish": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "ingredients": "Cucumber mix/Cucumber mix (cucumber/cucumber, sugar, vinegar, onion, paprika, salt, modified starch/modified starch, MUSTARD SEED/MUSTARD SEED, PRESERVATIVE/DETERGENT (E202), stabiliser/agent (E509), spice extract (cayenne pepper/pepper), spices, colouring/colouring agents (E141, E101)), water, sugar, pickled/marinated/pickled green jalapeño (7.8%) (jalapeño, water, vinegar/vinegar, salt, garlic, stabiliser/detergent (E509)), vinegar/vinegar,  white wine vinegar/white wine vinegar (SULFITE/SULFITE), rapeseed oil, modified starch/modified starch, onion, salt, preservatives/agents (E202, E211)"
+    },
+    "Mayonnaise": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, water, egg yolk*, MUSTARD (water, MUSTARD SEED, sugar, vinegar, salt, natural flavouring), vinegar, sugar, lemon juice concentrate, salt, modified starch, cayenne pepper, stabilisers (E412, E415), preservatives (E202, E211), acidity regulators (E330). *Free-range eggs"
+    },
+    "Tomato": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "tomato"
+    },
+    "Crispy Green Nuggets": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Water/Water, Breading (Rapeseed Oil, Rice Flour, Chickpea Flour/Chickpea Flour, Maize Starch, Maize Flour, Potato Starch/Potato Starch, Salt, Dextrose, Stabiliser (E 450, E 500), Thickener/Thickener (E 415)), Pea Protein*/Pea Protein* 14%, Vegetable Oils (Rapeseed, Shea), Stabiliser (E 461), Salt, Dextrose, Natural Flavourings, Potato Fibre/Potato Fibre, Onion/Onion, Lemon Juice Powder, Flavouring, Vegetable Broth (Salt, Onion/Onion, Leek/Leek, Carrot Extract/Carrot Extract, spices), cornstarch, garlic/garlic, thyme. Fried in rapeseed oil. *Swedish-grown/Swedish-grown peas/peas."
+    },
+    "Ketchup": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Tomatoes, vinegar, sugar, salt, spice and herb extracts (contains CELERY) spices."
+    },
+    "Mung Bean Burger": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Mung bean* 68%, round grain brown rice*, onion*, beetroot*, salt, garlic*, ground coriander*, fenugreek*, cumin*, cayenne pepper*, bay leaf*. *Organic raw material"
+    },
+    "Emmental Melted Cheese": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Emmental CHEESE (51%), Reconstituted Skim MILK, Cheddar CHEESE (10%), BUTTER, Melting Salt (E331), Skimmed MILK Powder, MILK Protein, Salt, WHEY Powder, Natural CHEESE Aroma, Acidity Regulator (E330), Anti-Caking Agent: Sunflower Lecithin"
+    },
+    "Creole dressing": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, water, sugar, egg yolk, chilli, vinegar, red wine vinegar, onion, garlic, salt, mustard seed, cayenne, paprika, spices, herbs, corn starch, red wine extract, glucose syrup, caramel sugar syrup, invert sugar syrup, malt vinegar, onion extract, lemon concentrate, sunflower oil, colour (E150c), stabilisers (E412, E415), acidity regulators (E330), preservatives (E202, E211), flavouring"
+    },
+    "Jalapeño pickled": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Nacho jalapeno in slices, water, vinegar, salt, calcium chloride."
+    },
+    "Parmesan flakes": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Unpasteurized MILK, salt, rennet"
+    },
+    "Aioli": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, water, MUSTARD (water, MUSTARD SEED), VINEGAR, SALT), EGG YOLK, GARLIC, WHITE WINE VINEGAR, OLIVE OIL, SALT, LEMON JUICE CONCENTRATE, PRESERVATIVES (E202, E211), acidity regulators (E330)"
+    },
+    "Buffalo Hot Sauce": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "ingredients": "Water, rapeseed oil, chili, vinegar, salt, sugar, garlic, vinegar, flavouring, preservatives (E202, E211, E224 (SULFITE), thickeners (E415, E1414)"
+    },
+    "Grand Deluxe meat": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Beef*, potatoes*, water, salt, potato flour, potato fiber*, EGG white powder*, EGG powder*, rosemary extract.*Swedish raw material"
+    },
+    "Meat": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Beef*, potatoes*, water, potato flour, salt, potato fiber*, EGG WHITE powder*, EGG powder*, rosemary extract. *Swedish raw material."
+    },
+    "Bacon": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Pork* without cartilage and rind, brown sugar, salt, black pepper, dextrose, antioxidants (E301, E331), rosemary extract, preservatives (E250), smoke aroma of hickory and oak. *Born, raised and slaughtered in Sweden"
+    },
+    "Frisco bread": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "WHEAT flour, water, invert sugar, WHEAT gluten, rapeseed oil, yeast, potato flakes, semolina (WHEAT), salt, potato starch, WHEAT SCALDING, vegetable emulsifier E471, E481, flavouring, spice, sourdough (WHEAT), barley malt flour, flour treatment agent E300. May contain traces of sesame seeds."
+    },
+    "Mustard - Heinz Mild": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Water, MUSTARDSEED, vinegar, sugar, salt, spices"
+    },
+    "Alternative - Hamburger Bun - Gluten": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Corn starch, water, rice flour, modified tapioca starch, sugar, rapeseed oil, sesame seeds, yeast, thickeners (E464, E412), salt, crushed psyllium seeds, emulsifiers (E471) and bamboo fiber."
+    },
+    "Lactose- and egg-free meat": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Swedish beef, water, potatoes, potato fiber, potato flour, salt, onion, broth powder (salt, onion, tomato, dextrose, brown sugar, pepper extract, antioxidant (E330), thyme), white pepper, black pepper."
+    },
+    "Gluten-free bread": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Corn starch, water, rice flour, modified tapioca starch, sugar, rapeseed oil, sesame seed, yeast, thickeners (E464, E412), salt, crushed psyllium seeds, emulsifiers (E471) and bamboo fiber."
+    },
+    "Cucumber salad": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Cucumber 44%, Rapeseed Oil, Sugar, Water, Egg Yolk, MUSTARD SEED, Salt, Onion, Paprika, Ginger, Clove, Cayenne Pepper, Nutmeg, Turmeric, Vinegar, Modified Starch, Stabilisers (Guar Gum, Xanthan Gum), Acidity Regulator (Citric Acid), Preservatives (Sodium Benzoate, Potassium Sorbate), Colour (Chlorophyll Copper Complex, Riboflavin)."
+    },
+    "Grand Chicken": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Chicken breast fillet, water, rapeseed and sunflower oil, rice flour, maize flour, WHEAT FLOUR, DURUM WHEAT FLOUR, POTATO STARCH, SALT, TAPIOCA STARCH, WHEAT PROTEIN, JALAPEÑO, PEPPER, Yeast Extract, Baking Powder (E450, E500), garlic, cayenne pepper, lovage, CELERY, dry yeast, corn starch, modified WHEAT STARCH, dextrose, flavourings, antioxidants (E331)"
+    },
+    "Grilled Chicken": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Chicken meat, potato starch, salt, sugar, horseradish, pepper, lemon powder, onion, garlic, antioxidant (E331)."
+    },
+    "Crispy chicken": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Chicken breast fillet, water, WHEAT flour, rapeseed and sunflower oil, DURUM WHEAT flour, cornflakes (corn, sugar, salt, barley malt), modified WHEAT starch, maize flour, salt, pea protein, acidity regulator (citric acid), maize starch, WHEAT protein, black pepper, baking powder (E450, E500), flavourings, yeast extract, dry yeast, antioxidant (E331), WHEAT starch, onion, stabiliser (E461), colour (E160c), modified maize starch, turmeric, nutmeg"
+    },
+    "Chicken wings": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Chicken wings, rapeseed and sunflower oil, potato starch, WHEAT flour, modified WHEAT, tapioca and maize starch, salt, acidity regulators (E262, E330), WHEAT gluten, pepper, colour (paprika extract), cayenne pepper, garlic, onion, maltodextrin, lemon powder, chilli, dry yeast, flavourings. All deep-fried products are deep-fried in rapeseed and/or sunflower oilIn case of allergies, be aware as co-frying occurs in some restaurants."
+    },
+    "Blue Cheese Style dip": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Water, rapeseed oil, cream cheese (MILK), EGG YOLK, sugar, salt, vinegar, MUSTARD SEED, parsley, garlic, onion, vinegar, black pepper, chili, natural blue cheese flavor, preservatives (E202, E211, E270), thickeners (E412, E415, E1414)"
+    },
+    "Chicken Nuggets": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Chicken breast fillet, water, WHEAT flour, rapeseed and sunflower oil, DURUM WHEAT flour. corn flour, pea protein, salt, acidity regulator (citric acid), garlic, onion, WHEAT GLUTEN, WHEAT FIBER, WHITE PEPPER, GLUCOSE SYRUP. black pepper, baking powder (E450, E500), modified starch, antioxidant (E331), flavouring"
+    },
+    "Lentil & quinoa salad": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Red lentils, white quinoa, coral lentils, black quinoa, rapeseed oil, vegetable stock (salt, maltodextrin, vegetables (onion, carrot, leek), starch (corn, potato), sugar, yeast extract, onion powder, flavoring, spices), salt."
+    },
+    "Cabbage salad": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Kale, cabbage, pointed cabbage"
+    },
+    "Soybeans": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Soybeans"
+    },
+    "Pickled red onion": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Red onion, sugar, vinegar, salt, antioxidant (E330)"
+    },
+    "Caesar dressing": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "ingredients": "Rapeseed oil, water, Italian HARD CHEESE (MILK), olive oil, egg yolk, salt, capers, sugar, garlic, MUSTARD SEED, vinegar, lemon juice concentrate, glucose syrup, black pepper, barley malt vinegar, onion extract, chili, coriander, cloves, allspice, marjoram, sunflower oil, thyme, flavouring, preservatives (E202, E211, E224 (SULFITE)), thickener (E415), antioxidant (E330)."
+    },
+    "Chili roasted sesame seeds": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "SESAME SEED (66%), chilli powder, salt, corn sugar, SOY SAUCE (water, SOYBEANS, WHEAT flour, salt), paprika powder."
+    },
+    "Sesame ginger dressing": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "ingredients": "Rapeseed oil, SOY sauce (water, SOYBEANS, salt vinegar), water, sugar, rice vinegar (water, salt, corn, rice extract, rice), SESAME OIL (7.3%), ginger (6.7%), chilli, garlic, salt, lime juice, vinegar, modified maize starch, vinegar, paprika powder, flavouring, preservatives (E202, E211), thickeners (E412, E415, E1414), antioxidants (E300), acidity regulators (E330)."
+    },
+    "Chèvre bits": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Goat cheese preparation (GOAT cheese, water, modified potato starch, MILK protein, BUTTER, stabilisers: polyphosphates; sodium citrate, thickener: methylcellulose, salt), breadcrumbs (WHEAT flour, salt, yeast, parsley), sunflower oil, water, WHEAT flour, stabilisers: diphosphates, raising agent: sodium bicarbonate."
+    },
+    "Mint-Paprika Dressing": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "ingredients": "Water, paprika purée (20%), syrup, rapeseed oil, lemon juice concentrate (SULFITE), vinegar, spices and herbs (chili pepper, mint (0.9%), parsley, coriander, cumin), tomato paste, garlic, salt, modified starch, balsamic vinegar (SULFITE), onion, stabilisers (E412, E415), preservatives (E202, E211), colour (E150d)."
+    },
+    "Fish burgers": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": true,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "ingredients": "ALASKA POLLOCK (Theragra chalcogramma), breadcrumbs* (maize flour (GLUTEN), salt, sugar, dye (calcium carbonate), emulsifier (E471)), water, breadcrumbs (WHEAT flour, yeast, salt), rapeseed oil, WHEAT flour, breading mix (WHEAT flour, potato starch, salt, pepper, acidity regulator (E500)), lemon pepper (salt, black pepper, acidity regulator (citric acid), potato starch, sugar, onion, lemon powder), pepper extract. *May contain traces of SOY, MILK, SULFITE. We fry all products in rapeseed and sunflower oil. In case of allergies, be aware as co-frying occurs in some restaurants."
+    },
+    "Chicken Junior Burger": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Chicken breast fillet*, water, rapeseed and sunflower oil, WHEAT flour, maize flour, DURUM WHEAT flour, maize starch, WHEAT gluten, salt, pea protein, WHEAT fibre, acidity regulator (citric acid), baking powder (E450, E500), glucose syrup, onion, garlic, yeast extract, modified starch, white pepper, antioxidant (E331), black pepper, flavouring. *Origin Sweden"
+    },
+    "Crispy fries": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Potatoes, sunflower oil, coating (modified potato starch, corn starch, rice flour, salt, maize flour and tapioca dextrin, dye E100, E160c)."
+    },
+    "Crispy Fries": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Potato, Sunflower Oil, Coating (5.5%) (Modified Starch, Corn Starch, Rice Flour, Salt, Corn Flour, Tapioca Dextrin, Turmeric Extract, Color: E160c)."
+    },
+    "Sweet Potato Fries": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Sweet Potato, Modified Starch, Starch, Dextrin, Spices, Salt, Spice Extract, Stabilizer Xanthan Gum, Canola Oil, Cane Sugar. In case of allergies, be aware as co-frying occurs in some restaurants."
+    },
+    "Melted Cheddar Dip": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "SKIMMED MILK, Water, Canola Oil, Modified Starch E1142, CHEDDAR CHEESE (MILK), Salt, Jalapenos, Antioxidants (E339), Tomato Paste, Acidity Regulator (E331), Preservative (E270), Emulsifier (E471) (Vegetable), Thickener (E466), Yeast Extract, Dye (E160a, E160e), White Pepper, Garlic."
+    },
+    "Melted Cheddar Dip 2024": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "SKIMMED MILK, water, rapeseed oil, thickeners: E1442, E466, cheddar cheese (4%) (fermented MILK, salt, enzymes), jalapeños (1.3%), salt, stabilisers: E339, E331, tomato paste, flavour enhancer: E270, emulsifier: E471, yeast extract, colouring: E160a, E160e, spice, garlic."
+    },
+    "Bean salad": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Chickpeas, Red Kidney Beans, White Kidney Beans, Black Beans, Rapeseed Oil, Red Wine Vinegar, Spring Onions, Olive Oil, Spices (Basil, Tarragon, Chives, Oregano, Parsley, Rosemary, Sage, Thyme, Cayenne, Black Pepper, White Pepper, Onion, Garlic, Tomato, Leek), Sugar, Salt, MUSTARD (Water, MUSTARD SEED, Vinegar, Salt), Antioxidants (E300), Preservatives (E200, E211)"
+    },
+    "Apple Wedges": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Apple, antioxidant (ascobic acid)"
+    },
+    "Mini carrots": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Carrots"
+    },
+    "Chili cheese": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Melted CHEESE (31%) (CHEESE, Water, BUTTER, MILK Protein, Emulsifying Salt: E331, WHEY POWDER, Salt, Colours: E160a and E160c, Starch), Breading (WHEAT Flour, WHEAT Starch, Salt, Baking Powder (E450, E500,E503), WHEY POWDER, Stabiliser: E464, Colour: E160c, Yeast, Sunflower Oil), Water, Sunflower Oil, Green Pepper (10%), Jalapeno Pepper (4%)."
+    },
+    "Västerbotten cheese sticks®": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Processed CHEESE (water, Västerbotten cheese 15% (pasteurized MILK, salt, bacterial culture, animal rennet, preservatives (E202, E251), potato starch) MILK), butter, skimmed milk powder, modified corn starch, emulsifying salts (E452, E450), milk protein, salt), WHEAT flour, water, vegetable oil, WHEAT starch, salt, tapioca starch, yeast, WHEAT gluten, baking powder (E450, E500ii) dextrose. Of the total weight of the product, Västerbottensost accounts for 15%."
+    },
+    "Onion rings": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Onion, batter (WHEAT flour, sugar, modified WHEAT starch, salt, rice flour, WHEY POWDER, baking powder (E500, E450), stabiliser: E412, colouring: E160c, spices), rapeseed oil, beer"
+    },
+    "Mozzarella Sticks": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Mozzarella CHEESE (MILK. salt, lactic acid bacteria, cheese enzyme), FLOUR (wheat, rice), water, rapeseed oil, starch (corn, WHEAT, potatoes), salt, yeast, sugar, modified starch (corn, WHEAT), beer flavoring, WHEAT gluten, dextrose, acid E330, thickener E412, stabilizer E461, raising agents (E450, E500), emulsifier E471, dye E150d, seasoning"
+    },
+    "Green & Garlic": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, water, egg yolk, garlic, mustard seed, sugar, salt, vinegar, spices, lemon, herb spice, preservatives (E202, E211), stabilisers (E412, E415), acidity regulators (citric acid), colour (E100, E141)."
+    },
+    "Umami dressing": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, water, egg yolk, vinegar, sugar, salt, mustard seed, red wine vinegar, mushroom, truffle aroma, parsley, preservative (E202), garlic, stabiliser (E415), cayenne pepper, white truffle."
+    },
+    "Aioli dressing": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, water, MUSTARD SEED, vinegar, salt, egg yolk, garlic, white wine vinegar, olive oil, salt, lemon juice concentrate, preservatives (E202, E211), acidity regulator E330."
+    },
+    "Sweet & sour": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "ingredients": "Water, Syrup, Vinegar, Vinegar, Sugar, Pineapple, Tomato Paste, Modified Starch, Orange Juice Concentrate, Salt, Spices, Cayenne Pepper, Garlic, Preservatives (Potassium Sorbate, Sodium Benzoate), Antioxidant (POTASSIUM DISULFITE)."
+    },
+    "Sourcream 'n' pepper": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, SOUR MILK/SOUR MILK/SOUR MILK, water/water/water, EGG YOLK/EGG YOLK, MUSTARD SEED, vinegar/wine vinegar, tomato paste, tomato, molasses, vinegar/vinegar, sugar/sugar, salt, onion/onion, corn flour/maize flour, RYE flour/rye flour, date/dates, raisins/raisins/raisins, tamarind, acidity regulator (citric acid), paprika, spices/spices (b.la. coriander), maltodextrin, CELERY, syrup, preservatives (potassium sorbate, sodium benzoate), stabilizer/stabilizer (guar gum/guar gum, xanthan gum)"
+    },
+    "BBQ dip": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Water, Tomato Paste, Brown Sugar, Sugar, Syrup, Vinegar, MUSTARD SEED, Salt, Modified Starch (Maize), Vinegar, Orange Juice, Onion, Garlic, Apple Juice Concentrate, Black Pepper, Caramel Sugar, Glucose Syrup, Onion Extract, Lemon Concentrate, Spices, Herbal Spices, Spice Extract, Paprika Powder, Acidity Regulators (E300, E330), Preservatives (E202, E211), Flavouring, Smoke Flavouring"
+    },
+    "Honey curry": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, vinegar, water, MUSTARD SEED, brown sugar, honey, curry, salt, spices, sugar, lemon, stabiliser (xanthan gum), preservatives (potassium sorbate and sodium benzoate), paprika."
+    },
+    "Ranch dressing": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, water, SOUR MILK, egg yolk, tomato paste, MUSTARD SEED, lemon concentrate, vinegar, sugar, salt, parsley, onion, oregano, spices, cayenne pepper, stabilisers (E412, E415), acidity regulators (E330), preservatives (E202, E211)."
+    },
+    "Hot Creole": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": true,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, water, vinegar, sugar, syrup (maize), maize protein, salt, ANCHOVIES, tamarind, spices, preservatives (potassium sorbate, sodium sorbate), egg yolk, MUSTARD SEED, vinegar, spices, garlic, onions, thickeners (carrageenan, guar gum, xanthan gum), acidity regulator (citric acid), flavouring, colour (caramel)."
+    },
+    "Chili bearnaise dip": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, egg yolk, water, salt, vinegar, maltodextrin, tomato, onion, parsley, tarragon, chili, spices, black pepper, sugar, preservatives (sodium benzoate, potassium sorbate), colour (beta-carotene), stabiliser (xanthan gum), acidity regulator (citric acid), flavouring."
+    },
+    "Bearnaise": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed oil, water, egg yolk, vinegar, salt, flavourings, colour (E160a), maltodextrin, preservatives (E211, E202), herbal spices, acidity regulator (citric acid)."
+    },
+    "Gochujang mayonnaise": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Rapeseed Oil, Water, Gochujang Paste (11%) (Rice Paste (Rice, Water, Salt, Starter Culture), Corn Syrup, Chili Pepper, Water, SOYBEAN Paste (Water, SOYBEANS, Salt, Starter Culture), Salt, WHEAT Gluten, SOY Seasoning (Water, Salt, SOYBEANS, WHEAT GLUTEN, Yeast Extract, Maltodextrin), Garlic Extract), Red Wine Vinegar, Sugar, Sambal Oelek (Red Chilli, Salt, Preservative (E202), Acid (E260)), EGG YOLK*, SESAME OIL, SALT, VINEGAR, SOY SAUCE (WATER, SOYBEANS, WHEAT, SALT), MUSTARD SEED, GARLIC POWDER, MALTODEXTRIN,  acidity regulator (E330), stabiliser (E412), preservatives (E202, E211), natural flavouring. *Eggs from free-range hens."
+    },
+    "Ice cream mix": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Water, SKIMMED MILK POWDER, Sugar, Coconut Oil, Glucose-Fructose Syrup, Emulsifier (E471), Stabilizer (E466, E412, E407), Flavouring."
+    },
+    "Cream": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "CREAM, emulsifier (E417), stabiliser (E407)"
+    },
+    "Milk": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "MILK"
+    },
+    "Cookie dough": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "WHEAT flour, brown sugar, cocoa butter, glucose syrup, sugar, coconut oil, dark chocolate chips (cocoa mass, sugar, cocoa butter, MILK fat, emulsifier: SOY lecithin, natural vanilla flavour), natural butter flavouring (from MILK), sugar cane molasses, natural flavouring, leavening agent: sodium bicarbonate, salt. May contain traces of: EGGS"
+    },
+    "Cookie dough sauce": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Glucose syrup, sweetened condensed skimmed milk, sugar, water, BUTTER oil, brown sugar, salt, emulsifier (E 471), flavouring (flavour), preservative (E 202), thickener (E 415)"
+    },
+    "Topping Chocolate": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Glucose syrup, sugar, water, fat-reduced cocoa powder, salt, acidity regulator (E330), preservative (E202), flavouring (vanillin)"
+    },
+    "Lemon Curd topping": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Glucose syrup, water, sugar, sweetened condensed MILK, BUTTER OIL, LEMON JUICE CONCENTRATE, modified starch (E 1442), thickener (E 415), emulsifier (lecithin), preservative (E 202), acidity regulator (E 331), colour (E 161b), natural lemon flavouring"
+    },
+    "Lemon fudge drops": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Sugar, glucose syrup, sunflower oil, invert sugar syrup, acidity regulator (citric acid), emulsifier (lecithin), natural flavouring, glazing agent (carnauba wax), colour (E 100)"
+    },
+    "Mini meringues": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Sugar, EGG WHITE, natural aroma. May contain traces of wheat flour, soy, almonds and nuts."
+    },
+    "Custard Madagascar": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": true,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": true,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "ingredients": "Invert Sugar, Glucose, Flavourings, Thickener: E1414, Bourbon Vanilla (0.3%), Madagascar Vanilla Extract (0.2%), Natural Colours: Beta-Carotene (E160a(ii)), Curcumin (E100), Preservatives: E202. May contain traces of EGG, PEANUT, SOY, MILK, NUTS, CELERY, MUSTARD, SESAME and SULFITE"
+    },
+    "Hard Chocolate": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Vegetable fats (coconut and shea), sugar, fat-reduced cocoa powder (18%), emulsifier (E 322, SOY lecithin), salt and flavouring (vanillin)"
+    },
+    "Topping Strawberry": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Glucose Syrup, Sugar, Strawberries (25%), Water, Acidity Regulator (E330), Thickener (E440), Preservatives (E202), Flavouring, Colour (E163)"
+    },
+    "Diced strawberries": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "100% strawberries"
+    },
+    "Espresso": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": ""
+    },
+    "Topping Caramel": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Glucose syrup, sugar, water, SKIMMED MILK powder, vegetable fat (shea), salt, flavouring, emulsifier (E322, SOY lecithin), preservative (E202)"
+    },
+    "Hundreds and thousands": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Sugar/sugar, potato starch/potato starch, glucose syrup, sunflower oil/sunflower oil, flavourings, surface (surface) treatment agent (beeswax), elderberry/elderberry juice concentrate, acidity regulator (citric acid), antioxidant (ascorbic acid), colourants/colourants (E160a, E131)"
+    },
+    "Lava cake": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "EGG, sugar, dark chocolate 17% (cocoa mass, sugar, fat-reduced cocoa powder, emulsifier: SOYALECITHIN; natural vanilla flavouring), vegetable oil from (rapeseed, sunflower), WHEAT flour, water, maltodextrin, alkalized cocoa powder, whole milk powder, tapioca starch, butter (MILK). May contain traces of NUTS"
+    },
+    "Raspberry pie": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Boiled vanilla cream (Water, sugar, BUTTERMILK POWDER, vegetable fat (coconut), modified starch (E1442), preservative (E202), salt, vanilla flavouring, colour (E160a, E101)), raspberries, WHEAT flour, sugar, vegetable oil (rapeseed), water, vegetable oil (coconut), OATMEAL, fully hydrogenated rapeseed oil, flavouring (vanillin), emulsifier (E471), MALT FLOUR (BARLEY), flour treatment agent (E300), natural flavouring, salt, starch, acidity regulator (E330), vitamin A. Origin Raspberries: EU"
+    },
+    "Topping caramel popcorn": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Glucose syrup, sweetened condensed MILK, sugar, water, vegetable fat (coconut oil), salt, emulsifier (E471), preservative (E 202), flavouring, thickener (E415)"
+    },
+    "Monk": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "WHEAT flour, water, sugar (13.5%), palm oil, rapeseed oil, emulsifiers from vegetable sources (mono- and diglyceride diacetylvicarbonate esters, mono- and diglycerides of fatty acids, sodium stearoyl-2-lactylate), SOYA FLOUR, baking powder (sodium carbonates, diphosphates), iodine salt (salt, potassium iodate), yeast, WHEAT starch, yeast powder, antioxidant (ascorbic acid) May contain traces of: eggs, milk, nuts, sesame seeds"
+    },
+    "Chocolate crisps": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Milk Chocolate 84% (Sugar, Cocoa Butter, Whole MILK Powder, Cocoa Mass, Whey Powder (MILK), Emulsifier: Lecithin (SOY), Natural Vanilla Flavour), Crunchy Cereals (WHEAT Flour, Sugar, WHEAT Malt Flour, Starch (WHEAT), Raising Agent (E500ii), Salt, Cocoa Butter, Natural Vanilla Flavour), Glucose Syrup, Sugar Surfactant (E414)."
+    },
+    "Chocolate crisp": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Crispy Cereals (Rice Flour, Sugar, Salt, Cocoa Butter), Chocolate 25.5% (Cocoa Mass, Sugar, Cocoa Butter, MILK FAT, Emulsifier: Lecithin (SOY), Natural Vanilla Flavouring, Milk Chocolate 19.0% (Sugar, Cocoa Butter, Whole Milk Powder, Cocoa Mass, Whey Powder (MILK), Emulsifier: Lecithin (SOY), Natural Vanilla Flavouring), White Chocolate 19.0% (Sugar, Cocoa Butter, WHOLE MILK POWDER, WHEY POWDER (MILK), Emulsifier: Lecithin (SOY), Natural Vanilla Flavouring), Glucose Syrup, Sugar, Surfactant: e414. May contain traces of eggs, nuts, gluten."
+    },
+    "Smoothie mix Mango, pineapple, banana, passion fruit": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Mango, banana, pineapple, papaya, passion fruit"
+    },
+    "Apple juice": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Apple juice from apple concentrate"
+    },
+    "Ice": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Water"
+    },
+    "Smoothie mix Strawberry, banana, blueberry": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Strawberry, banana, blueberry"
+    },
+    "Smoothie mix Avocado, spinach, mango, pineapple": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Avocado, spinach, mango, pineapple"
+    },
+    "Smoothie Mix Pink Peach": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Peach, banana, pineapple, dragon fruit"
+    },
+    "Sprite zero": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Carbonated water, acids (E330, E334), acidity regulators (E331), sweeteners (aspartame, acesulfame, sucralose), natural lemon and lime aromas. Contains a source of phenylalanine"
+    },
+    "Bubble gum syrup": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Sugar, Water, Natural Flavouring, Acid: Citric Acid, Emulsifier: Gum Arabic, E445, Colouring: E163"
+    },
+    "Lemonade": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Water, lemon juice from concentrate, sugar, stabiliser E466, flavouring."
+    },
+    "Fanta Orange zero": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Carbonated water, sucrose, orange juice obtained from concentrate (5%), acids (E330, E296), natural orange aroma with other natural flavourings, sweeteners (acesulfame K, aspartame), stabilisers (E414, E445), acidity regulators (E331), antioxidants (E300), colour (E160a). Contains a source of phenylalanine."
+    },
+    "Strawberry syrup": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Sugar, water, concentrated strawberry juice, natural flavouring, colouring foods: sweet potato concentrate, apple, radish and cherry, acidity: citric acid"
+    },
+    "Apple syrup": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Sugar, water, acid: citric acid, concentrated green apple juice, natural flavouring, colouring: E133."
+    },
+    "Tropical Juice": {
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Apple, orange, pineapple, passion fruit, banana, mango, papaya and kiwi fruit juice. Juice from concentrate."
+    },
+    "Oat drink": {
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "ingredients": "Water, OATS, Rapeseed Oil, Acidity Regulator (Dipotassium Phosphate), Calcium Carbonate, Salt, Vitamins (D2, Riboflavin, B12), Potassium Iodide"
+    }
+  },
+  "products": [
+    {
+      "name": "Avocado Brioche Grilloumi®",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Brioche bread",
+        "Grilloumi®",
+        "Cheddar Melted Cheese",
+        "Yellow onion",
+        "Avocado",
+        "Pickled red chili",
+        "Spicy Onion dressing"
+      ]
+    },
+    {
+      "name": "Avocado Brioche Plant Beef",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Brioche bread",
+        "Delifresh Plant Beef",
+        "Cheddar Melted Cheese",
+        "Yellow onion",
+        "Pickled red chili",
+        "Avocado",
+        "Spicy Onion dressing"
+      ]
+    },
+    {
+      "name": "Avocado Brioche Crispy Supreme",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Brioche bread",
+        "Crispy Supreme",
+        "Cheddar Melted Cheese",
+        "Yellow onion",
+        "Avocado",
+        "Pickled red chili",
+        "Spicy Onion dressing"
+      ]
+    },
+    {
+      "name": "BIG Classic Plant Beef",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Big-bread Sesame",
+        "Cheddar Melted Cheese",
+        "Delifresh Plant Beef",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Original dressing",
+        "Pickles"
+      ]
+    },
+    {
+      "name": "Veggie burger",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Delifresh Plant Beef",
+        "Iceberg lettuce",
+        "Plant-based mayonnaise"
+      ]
+    },
+    {
+      "name": "Grilloumi® burger",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Grilloumi®",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Jalapeñorelish",
+        "Mayonnaise",
+        "Sesame bread",
+        "Tomato"
+      ]
+    },
+    {
+      "name": "Crispy Green Nuggets",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Crispy Green Nuggets"
+      ]
+    },
+    {
+      "name": "Salad Wrap Plant Beef",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Delifresh Plant Beef",
+        "Iceberg lettuce",
+        "Cheddar Melted Cheese",
+        "Original dressing",
+        "Yellow onion",
+        "Tomato"
+      ]
+    },
+    {
+      "name": "Plant Beef burger",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Delifresh Plant Beef",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Ketchup",
+        "Pickles",
+        "Plant-based mayonnaise",
+        "Tomato"
+      ]
+    },
+    {
+      "name": "Double Grilloumi® burger",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Grilloumi®",
+        "Jalapeñorelish",
+        "Mayonnaise",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Tomato",
+        "Sesame bread"
+      ]
+    },
+    {
+      "name": "My Goodness! Burger",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Mung Bean Burger",
+        "Emmental Melted Cheese",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Tomato",
+        "Creole dressing",
+        "Jalapeño pickled"
+      ]
+    },
+    {
+      "name": "Crispy Supreme Parmesan",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Crispy Supreme",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Emmental Melted Cheese",
+        "Tomato",
+        "Parmesan flakes",
+        "Aioli"
+      ]
+    },
+    {
+      "name": "Crispy Supreme Buffalo",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Buffalo Hot Sauce",
+        "Yellow onion",
+        "Pickles",
+        "Iceberg lettuce",
+        "Plant-based mayonnaise",
+        "Crispy Supreme"
+      ]
+    },
+    {
+      "name": "Crispy Supreme Sandwich",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Yellow onion",
+        "Pickles",
+        "Plant-based mayonnaise",
+        "Crispy Supreme"
+      ]
+    },
+    {
+      "name": "Double Original Plant Beef",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Cheddar Melted Cheese",
+        "Ketchup",
+        "Iceberg lettuce",
+        "Original dressing",
+        "Tomato",
+        "Yellow onion",
+        "Sesame bread",
+        "Delifresh Plant Beef"
+      ]
+    },
+    {
+      "name": "Avocado Brioche",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Brioche bread",
+        "Grand Deluxe meat",
+        "Cheddar Melted Cheese",
+        "Yellow onion",
+        "Avocado",
+        "Pickled red chili",
+        "Spicy Onion dressing"
+      ]
+    },
+    {
+      "name": "BIG Classic",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Big-bread Sesame",
+        "Cheddar Melted Cheese",
+        "Meat",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Original dressing",
+        "Pickles"
+      ]
+    },
+    {
+      "name": "BIG Classic Bacon",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Big-bread Sesame",
+        "Cheddar Melted Cheese",
+        "Meat",
+        "Bacon",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Original dressing",
+        "Pickles"
+      ]
+    },
+    {
+      "name": "Double Original Burger",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Cheddar Melted Cheese",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Meat",
+        "Original dressing",
+        "Sesame bread",
+        "Tomato"
+      ]
+    },
+    {
+      "name": "Double Frisco burger",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Frisco bread",
+        "Yellow onion",
+        "Cheddar Melted Cheese",
+        "Iceberg lettuce",
+        "Meat",
+        "Original dressing",
+        "Tomato",
+        "Bacon"
+      ]
+    },
+    {
+      "name": "Cheese 'n' Bacon",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Original dressing",
+        "Tomato",
+        "Cheddar Melted Cheese",
+        "Bacon",
+        "Iceberg lettuce",
+        "Grand Deluxe meat",
+        "Sesame bread",
+        "Yellow onion"
+      ]
+    },
+    {
+      "name": "Classic '68 Cheese",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Grand Deluxe meat",
+        "Cheddar Melted Cheese",
+        "Ketchup",
+        "Yellow onion",
+        "Pickles",
+        "Mustard - Heinz Mild"
+      ]
+    },
+    {
+      "name": "Classic '68 Cheese Jr",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Cheddar Melted Cheese",
+        "Meat",
+        "Ketchup",
+        "Mustard - Heinz Mild",
+        "Yellow onion",
+        "Pickles"
+      ]
+    },
+    {
+      "name": "Triple Cheese",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Frisco bread",
+        "Meat",
+        "Cheddar Melted Cheese",
+        "Emmental Melted Cheese",
+        "Yellow onion",
+        "Creole dressing",
+        "Pickles"
+      ]
+    },
+    {
+      "name": "Frisco burgers",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Frisco bread",
+        "Alternative - Hamburger Bun - Gluten",
+        "Original dressing",
+        "Tomato",
+        "Bacon",
+        "Meat",
+        "Iceberg lettuce",
+        "Cheddar Melted Cheese",
+        "Yellow onion"
+      ]
+    },
+    {
+      "name": "MAX burgers",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Cheddar Melted Cheese",
+        "Meat",
+        "Mayonnaise",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Tomato"
+      ]
+    },
+    {
+      "name": "Original burgers",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Meat",
+        "Cheddar Melted Cheese",
+        "Original dressing",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Tomato"
+      ]
+    },
+    {
+      "name": "Salad Wrap Burger",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Cheddar Melted Cheese",
+        "Iceberg lettuce",
+        "Tomato",
+        "Original dressing",
+        "Grand Deluxe meat",
+        "Yellow onion"
+      ]
+    },
+    {
+      "name": "Burgers with only ketchup",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Alternative - Hamburger Bun - Gluten",
+        "Meat",
+        "Ketchup"
+      ]
+    },
+    {
+      "name": "Hamburger",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Alternative - Hamburger Bun - Gluten",
+        "Meat",
+        "Iceberg lettuce",
+        "Original dressing",
+        "Sesame bread"
+      ]
+    },
+    {
+      "name": "Cheeseburgers",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Meat",
+        "Cheddar Melted Cheese",
+        "Iceberg lettuce",
+        "Original dressing"
+      ]
+    },
+    {
+      "name": "Double Cheeseburger",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Meat",
+        "Cheddar Melted Cheese",
+        "Iceberg lettuce",
+        "Original dressing"
+      ]
+    },
+    {
+      "name": "BIG",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Big-bread Sesame",
+        "Alternative - Hamburger Bun - Gluten",
+        "Meat",
+        "Iceberg lettuce",
+        "Original dressing",
+        "Cheddar Melted Cheese"
+      ]
+    },
+    {
+      "name": "Special burgers without eggs",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Iceberg lettuce",
+        "Sesame bread",
+        "Plant-based mayonnaise",
+        "Cheddar Melted Cheese",
+        "Ketchup",
+        "Tomato",
+        "Yellow onion",
+        "Lactose- and egg-free meat"
+      ]
+    },
+    {
+      "name": "Special children's burger without eggs",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Iceberg lettuce",
+        "Sesame bread",
+        "Plant-based mayonnaise",
+        "Lactose- and egg-free meat"
+      ]
+    },
+    {
+      "name": "Special burgers without milk and lactose",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Iceberg lettuce",
+        "Sesame bread",
+        "Ketchup",
+        "Tomato",
+        "Yellow onion",
+        "Original dressing",
+        "Meat"
+      ]
+    },
+    {
+      "name": "Special baby burgers without milk and lactose",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Iceberg lettuce",
+        "Sesame bread",
+        "Original dressing",
+        "Meat"
+      ]
+    },
+    {
+      "name": "Gluten-free bread",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Gluten-free bread"
+      ]
+    },
+    {
+      "name": "Special children's burgers without gluten",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Gluten-free bread",
+        "Meat",
+        "Iceberg lettuce",
+        "Original dressing"
+      ]
+    },
+    {
+      "name": "Speciality burgers without gluten",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Gluten-free bread",
+        "Meat",
+        "Cheddar Melted Cheese",
+        "Ketchup",
+        "Tomato",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Original dressing"
+      ]
+    },
+    {
+      "name": "Hull Deluxe (Kungsgatan only)",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Big-bread Sesame",
+        "Meat",
+        "Yellow onion",
+        "Pickles",
+        "Iceberg lettuce",
+        "Original dressing",
+        "Cheddar Melted Cheese"
+      ]
+    },
+    {
+      "name": "Norrland cheese small",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Cheddar Melted Cheese",
+        "Cucumber salad",
+        "Yellow onion",
+        "Meat",
+        "Sesame bread"
+      ]
+    },
+    {
+      "name": "Norrland cheese medium",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Cheddar Melted Cheese",
+        "Cucumber salad",
+        "Meat",
+        "Yellow onion",
+        "Sesame bread"
+      ]
+    },
+    {
+      "name": "Norrlandscheese double",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Cheddar Melted Cheese",
+        "Yellow onion",
+        "Cucumber salad",
+        "Meat",
+        "Sesame bread"
+      ]
+    },
+    {
+      "name": "Avocado Brioche Grand Chicken",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Brioche bread",
+        "Grand Chicken",
+        "Cheddar Melted Cheese",
+        "Yellow onion",
+        "Pickled red chili",
+        "Avocado",
+        "Spicy Onion dressing"
+      ]
+    },
+    {
+      "name": "Grand Chicken Parmesan",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Grand Chicken",
+        "Emmental Melted Cheese",
+        "Iceberg lettuce",
+        "Tomato",
+        "Yellow onion",
+        "Aioli",
+        "Parmesan flakes"
+      ]
+    },
+    {
+      "name": "Grand Chicken Sandwich",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Grand Chicken",
+        "Yellow onion",
+        "Pickles",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "name": "Grand Chicken Buffalo",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Grand Chicken",
+        "Buffalo Hot Sauce",
+        "Yellow onion",
+        "Pickles",
+        "Iceberg lettuce",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "name": "Grilled Chicken Sandwich",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Grilled Chicken",
+        "Yellow onion",
+        "Mayonnaise",
+        "Pickles"
+      ]
+    },
+    {
+      "name": "Grilled Chicken Buffalo",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Grilled Chicken",
+        "Buffalo Hot Sauce",
+        "Mayonnaise",
+        "Yellow onion",
+        "Pickles",
+        "Iceberg lettuce"
+      ]
+    },
+    {
+      "name": "Grilled Chicken Parmesan",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Emmental Melted Cheese",
+        "Grilled Chicken",
+        "Aioli",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Parmesan flakes",
+        "Tomato"
+      ]
+    },
+    {
+      "name": "Crispy Chicken 'n' Cheese",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Cheddar Melted Cheese",
+        "Creole dressing",
+        "Crispy chicken",
+        "Tomato",
+        "Iceberg lettuce"
+      ]
+    },
+    {
+      "name": "Buffalo Hot Wings",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Chicken wings",
+        "Blue Cheese Style dip",
+        "Buffalo Hot Sauce"
+      ]
+    },
+    {
+      "name": "Chicken nuggets",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Chicken Nuggets"
+      ]
+    },
+    {
+      "name": "Chicken wings",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Chicken wings"
+      ]
+    },
+    {
+      "name": "Green Kale Caesar Salad",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Crispy chicken",
+        "Iceberg lettuce",
+        "Lentil & quinoa salad",
+        "Cabbage salad",
+        "Soybeans",
+        "Pickled red onion",
+        "Parmesan flakes",
+        "Caesar dressing"
+      ]
+    },
+    {
+      "name": "Sesame & Ginger Salad",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Chili roasted sesame seeds",
+        "Crispy chicken",
+        "Iceberg lettuce",
+        "Cabbage salad",
+        "Lentil & quinoa salad",
+        "Pickled red onion",
+        "Sesame ginger dressing",
+        "Soybeans"
+      ]
+    },
+    {
+      "name": "Chèvre Chaud Salad",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Iceberg lettuce",
+        "Lentil & quinoa salad",
+        "Cabbage salad",
+        "Soybeans",
+        "Pickled red onion",
+        "Chèvre bits",
+        "Mint-Paprika Dressing",
+        "Chili roasted sesame seeds"
+      ]
+    },
+    {
+      "name": "Green Kale Caesar Salad grilloumi",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Grilloumi®",
+        "Iceberg lettuce",
+        "Cabbage salad",
+        "Lentil & quinoa salad",
+        "Caesar dressing",
+        "Parmesan flakes",
+        "Pickled red onion",
+        "Soybeans"
+      ]
+    },
+    {
+      "name": "Sesame & Ginger Salad grilloumi",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Chili roasted sesame seeds",
+        "Grilloumi®",
+        "Iceberg lettuce",
+        "Cabbage salad",
+        "Lentil & quinoa salad",
+        "Pickled red onion",
+        "Soybeans",
+        "Sesame ginger dressing"
+      ]
+    },
+    {
+      "name": "Green Kale Caesar Salad grilled chicken",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Grilled Chicken",
+        "Iceberg lettuce",
+        "Cabbage salad",
+        "Lentil & quinoa salad",
+        "Pickled red onion",
+        "Soybeans",
+        "Parmesan flakes",
+        "Caesar dressing"
+      ]
+    },
+    {
+      "name": "Sesame & Ginger Salad grilled chicken",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Chili roasted sesame seeds",
+        "Grilled Chicken",
+        "Iceberg lettuce",
+        "Cabbage salad",
+        "Lentil & quinoa salad",
+        "Pickled red onion",
+        "Sesame ginger dressing",
+        "Soybeans"
+      ]
+    },
+    {
+      "name": "Green Kale Caesar Salad grand chicken",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Caesar dressing",
+        "Grand Chicken",
+        "Iceberg lettuce",
+        "Cabbage salad",
+        "Lentil & quinoa salad",
+        "Parmesan flakes",
+        "Pickled red onion",
+        "Soybeans"
+      ]
+    },
+    {
+      "name": "Sesame & Ginger Salad Grand Chicken",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Chili roasted sesame seeds",
+        "Grand Chicken",
+        "Iceberg lettuce",
+        "Cabbage salad",
+        "Lentil & quinoa salad",
+        "Pickled red onion",
+        "Sesame ginger dressing",
+        "Soybeans"
+      ]
+    },
+    {
+      "name": "Green Kale Caesar Salad crispy supreme",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Caesar dressing",
+        "Crispy Supreme",
+        "Iceberg lettuce",
+        "Cabbage salad",
+        "Lentil & quinoa salad",
+        "Parmesan flakes",
+        "Pickled red onion",
+        "Soybeans"
+      ]
+    },
+    {
+      "name": "Sesame & Ginger Salad crispy supreme",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Chili roasted sesame seeds",
+        "Crispy Supreme",
+        "Iceberg lettuce",
+        "Cabbage salad",
+        "Lentil & quinoa salad",
+        "Pickled red onion",
+        "Sesame ginger dressing",
+        "Soybeans"
+      ]
+    },
+    {
+      "name": "Green Kale Caesar Salad real green",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Caesar dressing",
+        "Iceberg lettuce",
+        "Cabbage salad",
+        "Lentil & quinoa salad",
+        "Mung Bean Burger",
+        "Pickled red onion",
+        "Parmesan flakes",
+        "Soybeans"
+      ]
+    },
+    {
+      "name": "Sesame & Ginger Salad real green",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Chili roasted sesame seeds",
+        "Iceberg lettuce",
+        "Cabbage salad",
+        "Lentil & quinoa salad",
+        "Mung Bean Burger",
+        "Pickled red onion",
+        "Sesame ginger dressing",
+        "Soybeans"
+      ]
+    },
+    {
+      "name": "Fish Deluxe Sandwich",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": true,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Fish burgers",
+        "Mayonnaise",
+        "Pickles",
+        "Yellow onion"
+      ]
+    },
+    {
+      "name": "Fish Deluxe Buffalo",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": true,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Buffalo Hot Sauce",
+        "Fish burgers",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Mayonnaise",
+        "Pickles",
+        "Sesame bread"
+      ]
+    },
+    {
+      "name": "Fish Deluxe Parmesan",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": true,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Emmental Melted Cheese",
+        "Fish burgers",
+        "Aioli",
+        "Yellow onion",
+        "Iceberg lettuce",
+        "Parmesan flakes",
+        "Tomato"
+      ]
+    },
+    {
+      "name": "Chicken Jr.",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sesame bread",
+        "Mayonnaise",
+        "Iceberg lettuce",
+        "Chicken Junior Burger"
+      ]
+    },
+    {
+      "name": "Crispy fries",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Crispy fries",
+        "Crispy Fries"
+      ]
+    },
+    {
+      "name": "Sweet potato Fries",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sweet Potato Fries"
+      ]
+    },
+    {
+      "name": "Plus menu",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Crispy fries"
+      ]
+    },
+    {
+      "name": "Cheese fries",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Crispy fries",
+        "Crispy Fries",
+        "Original dressing",
+        "Jalapeño pickled",
+        "Melted Cheddar Dip",
+        "Melted Cheddar Dip 2024",
+        "Yellow onion"
+      ]
+    },
+    {
+      "name": "Creole fries",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Crispy fries",
+        "Crispy Fries",
+        "Jalapeño pickled",
+        "Melted Cheddar Dip",
+        "Melted Cheddar Dip 2024",
+        "Creole dressing",
+        "Yellow onion"
+      ]
+    },
+    {
+      "name": "Bean salad",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Bean salad"
+      ]
+    },
+    {
+      "name": "Apple slices",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Apple Wedges"
+      ]
+    },
+    {
+      "name": "Mini carrots",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Mini carrots"
+      ]
+    },
+    {
+      "name": "Chili cheese",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Chili cheese"
+      ]
+    },
+    {
+      "name": "Västerbottensost® Sticks",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Västerbotten cheese sticks®"
+      ]
+    },
+    {
+      "name": "Chèvre Bites",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Chèvre bits"
+      ]
+    },
+    {
+      "name": "Onion rings",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Onion rings"
+      ]
+    },
+    {
+      "name": "Mozzarella sticks",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Mozzarella Sticks"
+      ]
+    },
+    {
+      "name": "Chicken wings",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Chicken wings"
+      ]
+    },
+    {
+      "name": "Melted Cheddar Dip",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Melted Cheddar Dip",
+        "Melted Cheddar Dip 2024"
+      ]
+    },
+    {
+      "name": "Original",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Original dressing"
+      ]
+    },
+    {
+      "name": "Green & garlic",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Green & Garlic"
+      ]
+    },
+    {
+      "name": "Umami",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Umami dressing"
+      ]
+    },
+    {
+      "name": "Aioli",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Aioli dressing"
+      ]
+    },
+    {
+      "name": "Sweet & sour",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Sweet & sour"
+      ]
+    },
+    {
+      "name": "Sourcream & pepper",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sourcream 'n' pepper"
+      ]
+    },
+    {
+      "name": "Mayonnaise",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Mayonnaise"
+      ]
+    },
+    {
+      "name": "Plant-based mayonnaise",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Plant-based mayonnaise"
+      ]
+    },
+    {
+      "name": "BBQ",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "BBQ dip"
+      ]
+    },
+    {
+      "name": "Curry",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Honey curry"
+      ]
+    },
+    {
+      "name": "Ranch",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ranch dressing"
+      ]
+    },
+    {
+      "name": "Hot creole",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": true,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Hot Creole"
+      ]
+    },
+    {
+      "name": "Chili Béarnaise",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Chili bearnaise dip"
+      ]
+    },
+    {
+      "name": "Bearnaise",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Bearnaise"
+      ]
+    },
+    {
+      "name": "Blue Cheese Style dip",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Blue Cheese Style dip"
+      ]
+    },
+    {
+      "name": "Buffalo Hot Sauce",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Buffalo Hot Sauce"
+      ]
+    },
+    {
+      "name": "Gochuchang dip",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Gochujang mayonnaise"
+      ]
+    },
+    {
+      "name": "Salsa Mojo Rojo",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Mint-Paprika Dressing"
+      ]
+    },
+    {
+      "name": "Spicy Onion",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": true,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Spicy Onion dressing"
+      ]
+    },
+    {
+      "name": "Luxury Shake Cookie Dough",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Cream",
+        "Milk",
+        "Cookie dough",
+        "Cookie dough sauce",
+        "Topping Chocolate"
+      ]
+    },
+    {
+      "name": "Luxury Shake Lemon Curd Pie",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Cream",
+        "Milk",
+        "Lemon Curd topping",
+        "Lemon fudge drops",
+        "Mini meringues"
+      ]
+    },
+    {
+      "name": "Luxury Shake Vanilla",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": true,
+        "Celery": true,
+        "Mustard": true,
+        "Peanuts": true,
+        "Sesame seeds": true,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": true
+      },
+      "sub_items": [
+        "Cream",
+        "Milk",
+        "Custard Madagascar",
+        "Ice cream mix"
+      ]
+    },
+    {
+      "name": "Luxury Shake Chocolate",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Cream",
+        "Milk",
+        "Topping Chocolate",
+        "Hard Chocolate",
+        "Ice cream mix"
+      ]
+    },
+    {
+      "name": "Luxury Shake Strawberry",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Topping Strawberry",
+        "Diced strawberries",
+        "Cream",
+        "Milk",
+        "Ice cream mix"
+      ]
+    },
+    {
+      "name": "Luxury shake Espresso caramel",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Cream",
+        "Milk",
+        "Espresso",
+        "Topping Caramel",
+        "Ice cream mix"
+      ]
+    },
+    {
+      "name": "Sundae Chocolate & Sprinkles",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Topping Chocolate",
+        "Hundreds and thousands"
+      ]
+    },
+    {
+      "name": "Sundae Strawberry & Sprinkles",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Topping Strawberry",
+        "Hundreds and thousands"
+      ]
+    },
+    {
+      "name": "Sundae Caramel & Sprinkles",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Topping Caramel",
+        "Hundreds and thousands"
+      ]
+    },
+    {
+      "name": "Sundae Sprinkles",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Hundreds and thousands"
+      ]
+    },
+    {
+      "name": "Sundae Natural",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix"
+      ]
+    },
+    {
+      "name": "Sundae Kola",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Topping Caramel",
+        "Ice cream mix"
+      ]
+    },
+    {
+      "name": "Sundae Strawberry",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Topping Strawberry",
+        "Ice cream mix"
+      ]
+    },
+    {
+      "name": "Sundae Chocolate",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Topping Chocolate",
+        "Ice cream mix"
+      ]
+    },
+    {
+      "name": "Lava cake with ice cream",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Lava cake",
+        "Ice cream mix"
+      ]
+    },
+    {
+      "name": "Lava cake",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Lava cake"
+      ]
+    },
+    {
+      "name": "Raspberry pie with ice cream",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Raspberry pie",
+        "Ice cream mix"
+      ]
+    },
+    {
+      "name": "Raspberry pie",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Raspberry pie"
+      ]
+    },
+    {
+      "name": "Sundae Salted Caramel",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Topping caramel popcorn",
+        "Ice cream mix"
+      ]
+    },
+    {
+      "name": "Sundae Donut Deluxe Cookie Dough Dream",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Topping Chocolate",
+        "Monk",
+        "Cookie dough"
+      ]
+    },
+    {
+      "name": "Sundae Donut Deluxe Caramel Craving",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Topping Caramel",
+        "Chocolate crisps",
+        "Chocolate crisp",
+        "Monk"
+      ]
+    },
+    {
+      "name": "Sundae Donut Deluxe Strawberry Swirl",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": true,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Ice cream mix",
+        "Mini meringues",
+        "Topping Strawberry",
+        "Diced strawberries",
+        "Monk"
+      ]
+    },
+    {
+      "name": "Sugar donut",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": true,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Monk"
+      ]
+    },
+    {
+      "name": "Mucho Mango",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Smoothie mix Mango, pineapple, banana, passion fruit",
+        "Apple juice",
+        "Ice"
+      ]
+    },
+    {
+      "name": "Very Berry",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Smoothie mix Strawberry, banana, blueberry",
+        "Apple juice",
+        "Ice"
+      ]
+    },
+    {
+      "name": "Green Boost",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Smoothie mix Avocado, spinach, mango, pineapple",
+        "Apple juice",
+        "Ice"
+      ]
+    },
+    {
+      "name": "Pink Peach",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Smoothie Mix Pink Peach",
+        "Apple juice",
+        "Ice"
+      ]
+    },
+    {
+      "name": "Bubble Blizz",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sprite zero",
+        "Bubble gum syrup",
+        "Lemonade",
+        "Ice"
+      ]
+    },
+    {
+      "name": "Strawberry Breeze",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Fanta Orange zero",
+        "Lemonade",
+        "Strawberry syrup",
+        "Ice"
+      ]
+    },
+    {
+      "name": "Fizzy Apple",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Sprite zero",
+        "Lemonade",
+        "Apple syrup",
+        "Ice"
+      ]
+    },
+    {
+      "name": "Lemonade",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Lemonade"
+      ]
+    },
+    {
+      "name": "Soft drinks, Coca-Cola",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Tropical Juice"
+      ]
+    },
+    {
+      "name": "Soft Drinks, Coca-Cola Zero",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Tropical Juice"
+      ]
+    },
+    {
+      "name": "Soft Drinks, Fanta Zero",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Tropical Juice"
+      ]
+    },
+    {
+      "name": "Soft Drinks, Fanta Exotic",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Tropical Juice"
+      ]
+    },
+    {
+      "name": "Soft Drinks, Fanta Lemon Zero",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Tropical Juice"
+      ]
+    },
+    {
+      "name": "Soft Drinks, Sprite Zero",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Tropical Juice"
+      ]
+    },
+    {
+      "name": "Frameless Original",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Tropical Juice"
+      ]
+    },
+    {
+      "name": "Ramlösa Pomegranate",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Tropical Juice"
+      ]
+    },
+    {
+      "name": "Frameless Mango Grapefruit",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Tropical Juice"
+      ]
+    },
+    {
+      "name": "Tropical Juice",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Tropical Juice"
+      ]
+    },
+    {
+      "name": "Apple juice",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Oat drink"
+      ]
+    },
+    {
+      "name": "Milk",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Oat drink"
+      ]
+    },
+    {
+      "name": "Oat drink",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Oat drink"
+      ]
+    },
+    {
+      "name": "Latte",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Milk"
+      ]
+    },
+    {
+      "name": "Flat white",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Milk",
+        "Espresso"
+      ]
+    },
+    {
+      "name": "Cappuccino",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Milk"
+      ]
+    },
+    {
+      "name": "Coffee with oat drink",
+      "allergens": {
+        "Gluten": true,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Espresso",
+        "Oat drink"
+      ]
+    },
+    {
+      "name": "Coffee with milk",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": true,
+        "Milk protein": true,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": [
+        "Espresso",
+        "Milk"
+      ]
+    },
+    {
+      "name": "Espresso",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": []
+    },
+    {
+      "name": "Earl grey tea",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": []
+    },
+    {
+      "name": "Green tea",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": []
+    },
+    {
+      "name": "English breakfast tea",
+      "allergens": {
+        "Gluten": false,
+        "Lactose": false,
+        "Milk protein": false,
+        "Egg": false,
+        "Fish": false,
+        "Nuts": false,
+        "Celery": false,
+        "Mustard": false,
+        "Peanuts": false,
+        "Sesame seeds": false,
+        "Crustacean": false,
+        "Mollusc": false,
+        "Lupins": false,
+        "Soybeans": false,
+        "Sulphur dioxide": false
+      },
+      "sub_items": []
+    }
+  ]
+}

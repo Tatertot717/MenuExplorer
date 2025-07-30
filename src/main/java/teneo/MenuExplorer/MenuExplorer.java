@@ -30,6 +30,7 @@ public class MenuExplorer {
 	private final List<List<Integer>> cart = new ArrayList<>();
 	private final List<MenuItem> searchMenu = new ArrayList<>();
 	private final Map<Integer, Set<Integer>> parentMap = new HashMap<>();
+	private MenuAllergens allergens;
 
 	/**
 	 * Constructs a new MenuExplorer by loading menu data from the specified JSON
@@ -48,6 +49,18 @@ public class MenuExplorer {
 				MenuSmartSearch.addMenuItem(searchMenu, title, id);
 			}
 		}
+	}
+	
+	public String getOrderTitle(List<Integer> order) {
+		return getRefById(order.get(0)).get("Title").getAsString();
+	}
+	
+	public void setNewMenuAllergens(String allergensFile) throws FileNotFoundException {
+		allergens = new MenuAllergens(allergensFile);
+	}
+	
+	public MenuAllergens getMenuAllergens() {
+		return allergens;
 	}
 	
 	public String search(String query) {
@@ -448,6 +461,22 @@ public class MenuExplorer {
 		}
 		return null;
 	}
+	
+	/**
+	 * Finds and returns the ref JSON object with the given ID.
+	 *
+	 * @param id the product ID
+	 * @return the JSON object for the ref, or null if not found
+	 */
+	public JsonObject getRefById(int id) {
+		for (JsonObject product : refs.values()) {
+			if (product.has("Id") && product.get("Id").getAsInt() == id) {
+				return product;
+			}
+		}
+		return null;
+	}
+
 
 	private JsonObject getRefFor(JsonObject obj) {
 		if (!obj.has("Id")) {
