@@ -1,4 +1,4 @@
-package teneo.MenuExplorer;
+package teneo.MenuExplorer.server;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -13,9 +13,11 @@ import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.reflect.TypeToken;
 
-import teneo.MenuExplorer.MenuSmartSearch.MenuItem;
+import teneo.MenuExplorer.server.MenuSmartSearch.MenuItem;
+import teneo.MenuExplorer.shared.IAllergen;
+import teneo.MenuExplorer.shared.IMenu;
 
-public class MenuAllergens {
+public class MenuAllergensLogic implements IAllergen {
 
 	public class MenuData {
 		@SerializedName("sub_items")
@@ -43,7 +45,7 @@ public class MenuAllergens {
 	private final List<MenuItem> allergenMenu = new ArrayList<>();
 
 
-	public MenuAllergens(String allergensFile) throws FileNotFoundException {
+	public MenuAllergensLogic(String allergensFile) throws FileNotFoundException {
 		FileReader reader = new FileReader(allergensFile);
 		Gson gson = new Gson();
 		Type type = new TypeToken<MenuData>() {
@@ -59,6 +61,7 @@ public class MenuAllergens {
 		}
 	}
 	
+	@Override
 	public String searchAllergens(String query) {
 		if (MenuSmartSearch.searchEnabled()) {
 			return getAllergens(MenuSmartSearch.match(query, allergenMenu).name).toString();
@@ -68,6 +71,7 @@ public class MenuAllergens {
 	}
 
 	//print allergens for all products, debug
+	@Override
 	public void printAllAllergens() {
 		if (menuData != null && menuData.products != null) {
 			for (Product product : menuData.products) {
@@ -79,6 +83,7 @@ public class MenuAllergens {
 		}
 	}
 
+	@Override
 	public void printAllergens(String name) {
 		boolean found = false;
 
@@ -135,6 +140,7 @@ public class MenuAllergens {
 		}
 	}
 
+	@Override
 	public Map<String, Boolean> getAllergens(String name) {
 		// Check for product allergens
 		if (menuData != null && menuData.products != null) {
@@ -156,6 +162,7 @@ public class MenuAllergens {
 		return null; // Not found
 	}
 
+	@Override
 	public String getIngredients(String name) {
 		if (menuData != null && menuData.subItems != null) {
 			SubItem subItem = menuData.subItems.get(name);
@@ -179,9 +186,9 @@ public class MenuAllergens {
 				System.out.println("Finished loading model in: " + secondsElapsed + " seconds");
 					}
 			
-			MenuExplorer explorer = new MenuExplorer("./maxmenu.json");
+			IMenu explorer = new MenuExplorerLogic("./maxmenu.json");
 			explorer.setNewMenuAllergens("./allergens.json");
-			MenuAllergens allergens = explorer.getMenuAllergens();
+			IAllergen allergens = explorer.getMenuAllergens();
 			//MenuAllergens allergens = new MenuAllergens("./allergens.json");
 
 			// allergens.printAllAllergens();

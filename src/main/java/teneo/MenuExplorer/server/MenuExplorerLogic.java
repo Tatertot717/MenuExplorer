@@ -1,4 +1,4 @@
-package teneo.MenuExplorer;
+package teneo.MenuExplorer.server;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -21,16 +21,18 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 
-import teneo.MenuExplorer.MenuSmartSearch.MenuItem;
+import teneo.MenuExplorer.server.MenuSmartSearch.MenuItem;
+import teneo.MenuExplorer.shared.IAllergen;
+import teneo.MenuExplorer.shared.IMenu;
 
-public class MenuExplorer {
+public class MenuExplorerLogic implements IMenu {
 
 	private final Map<String, JsonObject> refs = new HashMap<>();
 	private final List<JsonObject> products = new ArrayList<>();
 	private final List<List<Integer>> cart = new ArrayList<>();
 	private final List<MenuItem> searchMenu = new ArrayList<>();
 	private final Map<Integer, Set<Integer>> parentMap = new HashMap<>();
-	private MenuAllergens allergens;
+	private IAllergen allergens;
 
 	/**
 	 * Constructs a new MenuExplorer by loading menu data from the specified JSON
@@ -39,7 +41,7 @@ public class MenuExplorer {
 	 * @param filePath the path to the JSON file containing menu data
 	 * @throws FileNotFoundException if the specified file does not exist
 	 */
-	public MenuExplorer(String filePath) throws FileNotFoundException {
+	public MenuExplorerLogic(String filePath) throws FileNotFoundException {
 		loadJsonData(filePath);
 		buildParentMap();
 		if (MenuSmartSearch.searchEnabled() == true) {
@@ -51,18 +53,22 @@ public class MenuExplorer {
 		}
 	}
 	
+	@Override
 	public String getOrderTitle(List<Integer> order) {
 		return getRefById(order.get(0)).get("Title").getAsString();
 	}
 	
+	@Override
 	public void setNewMenuAllergens(String allergensFile) throws FileNotFoundException {
-		allergens = new MenuAllergens(allergensFile);
+		allergens = new MenuAllergensLogic(allergensFile);
 	}
 	
-	public MenuAllergens getMenuAllergens() {
+	@Override
+	public IAllergen getMenuAllergens() {
 		return allergens;
 	}
 	
+	@Override
 	public String search(String query) {
 		if (MenuSmartSearch.searchEnabled()) {
 			return MenuSmartSearch.match(query, searchMenu).name;
@@ -70,6 +76,7 @@ public class MenuExplorer {
 		return null;
 	}
 	
+	@Override
 	public String searchTop10(String query) {
 		if (MenuSmartSearch.searchEnabled()) {
 	        List<MenuItem> topMatches = MenuSmartSearch.matchTop10(query, searchMenu);
@@ -93,6 +100,7 @@ public class MenuExplorer {
 	 * @param ids   the list of item IDs to add
 	 * @param order the current order to modify
 	 */
+	@Override
 	public void addMultipleToOrder(List<Integer> ids, List<Integer> order) {
 		for (int id : ids) {
 			addToOrder(id, order);
@@ -105,6 +113,7 @@ public class MenuExplorer {
 	 * @param id    the ID of the item to add
 	 * @param order the current order to modify
 	 */
+	@Override
 	public void addToOrder(int id, List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return;
@@ -371,6 +380,7 @@ public class MenuExplorer {
 	 * @param rootId the product ID to search under
 	 * @return a set of all descendant item IDs
 	 */
+	@Override
 	public Set<Integer> getAllSubIds(int rootId) {
 		Set<Integer> subIds = new HashSet<>();
 		JsonObject root = getProductById(rootId);
@@ -385,6 +395,7 @@ public class MenuExplorer {
 	 *
 	 * @return the cart containing all current orders
 	 */
+	@Override
 	public List<List<Integer>> getCart() {
 		return cart;
 	}
@@ -394,6 +405,7 @@ public class MenuExplorer {
 	 *
 	 * @return the total cart price
 	 */
+	@Override
 	public int getCartTotalPrice() {
 		int totalPrice = 0;
 		for (List<Integer> order : cart) {
@@ -408,6 +420,7 @@ public class MenuExplorer {
 	 * @param id the product ID
 	 * @return the product description, or an error message if not found
 	 */
+	@Override
 	public String getDescriptionFromId(int id) {
 		JsonObject product = refs.get(String.valueOf(id));
 		if (product != null) {
@@ -426,6 +439,7 @@ public class MenuExplorer {
 	 * @param order the order to calculate price for
 	 * @return the total price of the order
 	 */
+	@Override
 	public int getOrderPrice(List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return 0;
@@ -453,6 +467,7 @@ public class MenuExplorer {
 	 * @param id the product ID
 	 * @return the JSON object for the product, or null if not found
 	 */
+	@Override
 	public JsonObject getProductById(int id) {
 		for (JsonObject product : products) {
 			if (product.has("Id") && product.get("Id").getAsInt() == id) {
@@ -468,6 +483,7 @@ public class MenuExplorer {
 	 * @param id the product ID
 	 * @return the JSON object for the ref, or null if not found
 	 */
+	@Override
 	public JsonObject getRefById(int id) {
 		for (JsonObject product : refs.values()) {
 			if (product.has("Id") && product.get("Id").getAsInt() == id) {
@@ -493,6 +509,7 @@ public class MenuExplorer {
 	 * @param cutoffId the node ID under which to collect sub-IDs
 	 * @return a set of descendant item IDs under the cutoff node
 	 */
+	@Override
 	public Set<Integer> getSubIdsUnder(int baseId, int cutoffId) {
 		JsonObject base = getProductById(baseId);
 		if (base == null) {
@@ -523,6 +540,7 @@ public class MenuExplorer {
 	 * @param id the product ID
 	 * @return the product title, or "Unknown" if not found
 	 */
+	@Override
 	public String getTitleForId(int id) {
 		JsonObject ref = refs.get(String.valueOf(id));
 		if (ref != null && ref.has("Title")) {
@@ -571,6 +589,7 @@ public class MenuExplorer {
 	 *
 	 * @return a formatted string showing each order and the cart total
 	 */
+	@Override
 	public String printCart() {
 		if (cart.isEmpty()) {
 			return "Cart is empty.";
@@ -595,6 +614,7 @@ public class MenuExplorer {
 	 * @param order the order to print
 	 * @return a formatted string representing the order
 	 */
+	@Override
 	public String printOrder(List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return "No order, start one";
@@ -624,6 +644,7 @@ public class MenuExplorer {
 	 * @param order the order to display options for
 	 * @return a formatted string showing all selectable options
 	 */
+	@Override
 	public String printOrderOptions(List<Integer> order) {
 		int rootId = order.get(0);
 		JsonObject root = getProductById(rootId);
@@ -684,6 +705,7 @@ public class MenuExplorer {
 	 * @param id    the ID of the item to remove
 	 * @param order the current order to modify
 	 */
+	@Override
 	public void removeFromOrder(int id, List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return;
@@ -762,6 +784,7 @@ public class MenuExplorer {
 	 * @param ids   the list of item IDs to remove
 	 * @param order the current order to modify
 	 */
+	@Override
 	public void removeMultipleFromOrder(List<Integer> ids, List<Integer> order) {
 		for (int id : ids) {
 			removeFromOrder(id, order);
@@ -773,6 +796,7 @@ public class MenuExplorer {
 	 *
 	 * @param order the order to remove
 	 */
+	@Override
 	public void removeOrder(List<Integer> order) {
 		if (order == null || order.isEmpty() || cart.isEmpty()) {
 			return;
@@ -797,6 +821,7 @@ public class MenuExplorer {
 	 * @param rootId the root product ID to start the order with
 	 * @return a list of selected item IDs representing the new order
 	 */
+	@Override
 	public List<Integer> startOrder(int rootId) {
 		List<Integer> order = new ArrayList<>();
 		order.add(rootId); // Start with the main product

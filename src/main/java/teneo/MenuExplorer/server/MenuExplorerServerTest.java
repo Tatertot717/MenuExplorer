@@ -1,4 +1,4 @@
-package teneo.MenuExplorer;
+package teneo.MenuExplorer.server;
 
 import java.io.FileNotFoundException;
 import java.time.Duration;
@@ -8,8 +8,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class MenuExplorerMain {
-	private static MenuExplorer explorer;
+import teneo.MenuExplorer.shared.IMenu;
+
+public class MenuExplorerServerTest {
+	private static IMenu explorer;
 	private static List<Integer> order = new ArrayList<>();
 	private static final Scanner scanner = new Scanner(System.in);
 	private static List<List<Integer>> cart;
@@ -27,7 +29,7 @@ public class MenuExplorerMain {
 			System.out.println("Finished loading model in: " + secondsElapsed + " seconds");
 				}
 
-			explorer = new MenuExplorer("./maxmenu.json");
+			explorer = new MenuExplorerLogic("./maxmenu.json");
 			explorer.setNewMenuAllergens("./allergens.json");
 			
 			cart = explorer.getCart();

@@ -1,4 +1,4 @@
-package teneo.MenuExplorer;
+package teneo.MenuExplorer.server;
 
 import java.io.File;
 import java.io.FileNotFoundException;
