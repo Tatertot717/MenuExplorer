@@ -16,7 +16,6 @@ public class MenuExplorerServerTest {
 	private static final Scanner scanner = new Scanner(System.in);
 	private static List<List<Integer>> cart;
 	private static final boolean LOAD_MSS = true;
-
 	public static void main(String[] args) {
 		try {
 			if (LOAD_MSS) {

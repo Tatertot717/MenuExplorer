@@ -15,6 +15,9 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -25,6 +28,7 @@ import teneo.MenuExplorer.server.MenuSmartSearch.MenuItem;
 import teneo.MenuExplorer.shared.IAllergen;
 import teneo.MenuExplorer.shared.IMenu;
 
+@Service
 public class MenuExplorerLogic implements IMenu {
 
 	private final Map<String, JsonObject> refs = new HashMap<>();
@@ -41,7 +45,7 @@ public class MenuExplorerLogic implements IMenu {
 	 * @param filePath the path to the JSON file containing menu data
 	 * @throws FileNotFoundException if the specified file does not exist
 	 */
-	public MenuExplorerLogic(String filePath) throws FileNotFoundException {
+	public MenuExplorerLogic(@Value("${menuPath}")String filePath) throws FileNotFoundException {
 		loadJsonData(filePath);
 		buildParentMap();
 		if (MenuSmartSearch.searchEnabled() == true) {
@@ -55,8 +59,23 @@ public class MenuExplorerLogic implements IMenu {
 	
 	@Override
 	public String getOrderTitle(List<Integer> order) {
-		return getRefById(order.get(0)).get("Title").getAsString();
+	    if (order == null || order.isEmpty()) {
+	        return ("Order list is null or empty");
+	    }
+
+	    JsonObject ref = getRefById(order.get(0));
+	    if (ref == null) {
+	        return ("No reference found for order ID: " + order.get(0));
+	    }
+
+	    JsonElement titleElement = ref.get("Title");
+	    if (titleElement == null || titleElement.isJsonNull()) {
+	        return ("No 'Title' field found in reference for order ID: " + order.get(0));
+	    }
+
+	    return titleElement.getAsString();
 	}
+
 	
 	@Override
 	public void setNewMenuAllergens(String allergensFile) throws FileNotFoundException {
