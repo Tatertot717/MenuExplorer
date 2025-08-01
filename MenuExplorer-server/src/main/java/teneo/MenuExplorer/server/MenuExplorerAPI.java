@@ -39,9 +39,9 @@ public class MenuExplorerAPI {
 		return menu.getOrderTitle(order);
 	}
 
-	@GetMapping("/search")
-	public String search(@RequestParam String query) {
-		return menu.search(query);
+	@PostMapping("/searchOrder")
+	public String searchOrder(@RequestParam("query") String query, @RequestBody List<Integer> order) {
+		return menu.searchOrder(query, order);
 	}
 
 	@GetMapping("/searchTop10")

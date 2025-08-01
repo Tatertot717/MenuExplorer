@@ -52,6 +52,7 @@ public class MenuExplorerLogic implements IMenu {
 		if (MenuSmartSearch.searchEnabled() == true) {
 			for (JsonObject product : refs.values()) {
 				String title = product.get("Title").getAsString();
+				title = title.toLowerCase().replaceAll("[^\\p{ASCII}]", " ");
 				int id = product.get("Id").getAsInt();
 				MenuSmartSearch.addMenuItem(searchMenu, title, id);
 			}
@@ -84,9 +85,23 @@ public class MenuExplorerLogic implements IMenu {
 	 * {@inheritDoc}
 	 */
 	@Override
-	public String search(String query) {
+	public String searchOrder(String query, List<Integer> order) {
 		if (MenuSmartSearch.searchEnabled()) {
-			return MenuSmartSearch.match(query, searchMenu).name;
+			if (order == null || order.isEmpty()) {
+				return ("Order list is null or empty");
+			}
+
+			List<MenuItem> orderOptions = new ArrayList<MenuItem>();
+			Set<Integer> allIds = getAllSubIds(order.get(0));
+			if (allIds.isEmpty())
+				return null;
+			for (int id : allIds) {
+				MenuSmartSearch.addMenuItem(orderOptions, getTitleForId(id), id);
+			}
+
+			MenuItem match = MenuSmartSearch.match(query, orderOptions);
+			if (match != null)
+				return match.name;
 		}
 		return null;
 	}

@@ -9,7 +9,8 @@ import com.google.gson.JsonObject;
  * Shared interface for menu-related operations including order creation, cart
  * management, product lookup, and pricing.
  * <p>
- * Intended to be used across both server and client layers as a guide to implementing the api.
+ * Intended to be used across both server and client layers as a guide to
+ * implementing the api.
  */
 public interface IMenu {
 
@@ -22,15 +23,17 @@ public interface IMenu {
 	String getOrderTitle(List<Integer> order);
 
 	/**
-	 * Performs a search across the menu for matching product names or keywords.
+	 * Performs a search across a order's options for matching product names or
+	 * keywords.
 	 *
 	 * @param query the search string
+	 * @param order the order to search in
 	 * @return the search results as a formatted string
 	 */
-	String search(String query);
+	String searchOrder(String query, List<Integer> order);
 
 	/**
-	 * Returns the top 10 search results based on relevance or popularity.
+	 * Returns the top 10 search results based on similarity.
 	 *
 	 * @param query the search string
 	 * @return the top 10 results as a formatted string

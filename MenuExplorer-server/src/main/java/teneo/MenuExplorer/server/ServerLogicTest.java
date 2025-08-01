@@ -13,7 +13,7 @@ import java.util.Scanner;
  * test the api.
  * 
  */
-public class ServerTest {
+public class ServerLogicTest {
 	private static IMenu explorer;
 	private static IAllergen allergens;
 	private static List<Integer> order = new ArrayList<>();
@@ -26,7 +26,7 @@ public class ServerTest {
 			if (LOAD_MSS) {
 				System.out.println("Loading model...");
 				Instant start = Instant.now();
-				MenuSmartSearch.loadModel("./glove.2024.wikigiga.100d.zip"); // about 1gb in size, uncompressed
+				MenuSmartSearch.loadModel("./glove.2024.wikigiga.50d.zip"); // about 1gb in size, uncompressed
 				Instant end = Instant.now();
 
 				long secondsElapsed = Duration.between(start, end).getSeconds();
@@ -92,7 +92,7 @@ public class ServerTest {
 					} else {
 						String output = allergens
 								.searchAllergens(String.join(" ", Arrays.copyOfRange(parts, 1, parts.length)));
-						System.out.println("Added item " + output);
+						System.out.println("Allergens: " + output);
 					}
 					break;
 
@@ -103,7 +103,7 @@ public class ServerTest {
 					} else {
 						String output = allergens
 								.searchIngredients(String.join(" ", Arrays.copyOfRange(parts, 1, parts.length)));
-						System.out.println("Added item " + output);
+						System.out.println("Ingredients: " + output);
 					}
 					break;
 
@@ -165,13 +165,13 @@ public class ServerTest {
 					}
 					break;
 
-				case "sm":
+				case "so":
 				case "search":
 					if (parts.length < 2) {
-						System.out.println("Usage: sm <query>");
+						System.out.println("Usage: so <query>");
 					} else {
-						System.out.println(
-								explorer.searchTop10(String.join(" ", Arrays.copyOfRange(parts, 1, parts.length))));
+						System.out.println(explorer
+								.searchOrder(String.join(" ", Arrays.copyOfRange(parts, 1, parts.length)), order));
 					}
 					break;
 
@@ -188,6 +188,7 @@ public class ServerTest {
 				}
 			} catch (Exception e) {
 				System.out.println("Error: " + e.getMessage());
+				e.printStackTrace();
 			}
 		}
 	}
@@ -200,7 +201,7 @@ public class ServerTest {
 				+ "  poo           - print order options from current order\n" + "  pc            - print cart\n"
 				+ "  prc           - print cart total price\n" + "  pro           - print current order price\n"
 				+ "  sao <id>      - switch to active order ID\n" + "  ro            - remove current order\n"
-				+ "  sm <query>    - search menu by natural language\n"
+				+ "  so <query>    - search order possibilities by natural language\n"
 				+ "  all <item>    - search allergens for an item\n"
 				+ "  i <item>      - search ingredients for an item\n" + "  help          - show this help\n"
 				+ "  q             - quit");

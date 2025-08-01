@@ -14,8 +14,8 @@ import feign.gson.GsonEncoder;
 /**
  * Client wrapper for interacting with the remote menu API using Feign.
  * <p>
- * Provides methods for order creation, cart management, product lookup,
- * and pricing via a backend service.
+ * Provides methods for order creation, cart management, product lookup, and
+ * pricing via a backend service.
  */
 public class MenuExplorer {
 	private final FMenu explorer;
@@ -27,12 +27,9 @@ public class MenuExplorer {
 	 * @param baseUrl the base URL of the menu server API
 	 */
 	public MenuExplorer(String baseUrl) {
-		explorer = Feign.builder()
-			.contract(new SpringMvcContract())
-			.encoder(new GsonEncoder())
-			.decoder(new StringDecoder())
-			.requestInterceptor(new JsonRequestInterceptor())
-			.target(FMenu.class, baseUrl);
+		explorer = Feign.builder().contract(new SpringMvcContract()).encoder(new GsonEncoder())
+				.decoder(new StringDecoder()).requestInterceptor(new JsonRequestInterceptor())
+				.target(FMenu.class, baseUrl);
 	}
 
 	/**
@@ -46,13 +43,15 @@ public class MenuExplorer {
 	}
 
 	/**
-	 * Performs a search across the menu for matching product names or keywords.
+	 * Performs a search across a order's options for matching product names or
+	 * keywords.
 	 *
 	 * @param query the search string
+	 * @param order the order to search in
 	 * @return the search results as a formatted string
 	 */
-	public String search(String query) {
-		return explorer.search(query);
+	public String searchOrder(String query, List<Integer> order) {
+		return explorer.searchOrder(query, order);
 	}
 
 	/**
@@ -66,7 +65,8 @@ public class MenuExplorer {
 	}
 
 	/**
-	 * Adds multiple items to the order by calling {@code addToOrder} for each item ID.
+	 * Adds multiple items to the order by calling {@code addToOrder} for each item
+	 * ID.
 	 *
 	 * @param ids   the list of item IDs to add
 	 * @param order the current order to modify
@@ -88,7 +88,8 @@ public class MenuExplorer {
 	}
 
 	/**
-	 * Gets all nested item IDs under a specified product, including all descendants.
+	 * Gets all nested item IDs under a specified product, including all
+	 * descendants.
 	 *
 	 * @param rootId the product ID to search under
 	 * @return a set of all descendant item IDs
@@ -186,7 +187,8 @@ public class MenuExplorer {
 	}
 
 	/**
-	 * Prints a single order in a readable format, including selected options and price.
+	 * Prints a single order in a readable format, including selected options and
+	 * price.
 	 *
 	 * @param order the order to print
 	 * @return a formatted string representing the order
@@ -196,7 +198,8 @@ public class MenuExplorer {
 	}
 
 	/**
-	 * Prints the full menu structure for a given order, including all configurable options.
+	 * Prints the full menu structure for a given order, including all configurable
+	 * options.
 	 *
 	 * @param order the order to display options for
 	 * @return a formatted string showing all selectable options
@@ -239,7 +242,8 @@ public class MenuExplorer {
 	}
 
 	/**
-	 * Starts a new order with the given root product ID and applies any default selections.
+	 * Starts a new order with the given root product ID and applies any default
+	 * selections.
 	 *
 	 * @param rootId the root product ID to start the order with
 	 * @return a list of selected item IDs representing the new order

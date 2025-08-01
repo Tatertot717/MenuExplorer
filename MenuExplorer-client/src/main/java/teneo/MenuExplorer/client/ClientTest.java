@@ -124,13 +124,13 @@ public class ClientTest {
 					}
 					break;
 
-				case "sm":
+				case "so":
 				case "search":
 					if (parts.length < 2) {
-						System.out.println("Usage: sm <query>");
+						System.out.println("Usage: so <query>");
 					} else {
-						System.out.println(
-								explorer.searchTop10(String.join(" ", Arrays.copyOfRange(parts, 1, parts.length))));
+						System.out.println(explorer
+								.searchOrder(String.join(" ", Arrays.copyOfRange(parts, 1, parts.length)), order));
 					}
 					break;
 
@@ -182,7 +182,7 @@ public class ClientTest {
 				+ "  poo           - print order options from current order\n" + "  pc            - print cart\n"
 				+ "  prc           - print cart total price\n" + "  pro           - print current order price\n"
 				+ "  sao <id>      - switch to active order ID\n" + "  ro            - remove current order\n"
-				+ "  sm <query>    - search menu by natural language\n"
+				+ "  so <query>    - search order possibilities by natural language\n"
 				+ "  all <item>    - search allergens for an item\n"
 				+ "  i <item>      - search ingredients for an item\n" + "  help          - show this help\n"
 				+ "  q             - quit");

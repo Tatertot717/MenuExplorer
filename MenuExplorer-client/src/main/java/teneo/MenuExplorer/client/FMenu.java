@@ -14,7 +14,8 @@ import com.google.gson.JsonObject;
 import feign.Headers;
 
 /**
- * Contract which states how the menu API is to be used by the client. See {@link MenuExplorer} for function reference.
+ * Contract which states how the menu API is to be used by the client. See
+ * {@link MenuExplorer} for function reference.
  */
 @FeignClient(name = "menuapi", url = "${menu.api.url}")
 public interface FMenu {
@@ -23,8 +24,8 @@ public interface FMenu {
 	@Headers("Content-Type: application/json")
 	String getOrderTitle(@RequestBody List<Integer> order);
 
-	@GetMapping("/api/search")
-	String search(@RequestParam("query") String query);
+	@PostMapping("/api/searchOrder")
+	String searchOrder(@RequestParam("query") String query, @RequestBody List<Integer> order);
 
 	@GetMapping("/api/searchTop10")
 	String searchTop10(@RequestParam("query") String query);

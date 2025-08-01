@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * Contract which states how the allergens api is to be used by the client. See {@link Allergens} for function reference.
+ * Contract which states how the allergens api is to be used by the client. See
+ * {@link Allergens} for function reference.
  */
 @FeignClient(name = "allergenapi", url = "${menu.api.url}")
 public interface FAllergens {
