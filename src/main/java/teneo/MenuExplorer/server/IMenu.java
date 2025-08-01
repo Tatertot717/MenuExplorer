@@ -1,21 +1,40 @@
-package teneo.MenuExplorer.shared;
+package teneo.MenuExplorer.server;
 
-import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Set;
 
 import com.google.gson.JsonObject;
 
+/**
+ * Shared interface for menu-related operations including order creation, cart
+ * management, product lookup, and pricing.
+ * <p>
+ * Intended to be used across both server and client layers as a guide to implementing the api.
+ */
 public interface IMenu {
 
+	/**
+	 * Generates a human-readable title for a given order.
+	 *
+	 * @param order the list of item IDs representing the order
+	 * @return the title of the order
+	 */
 	String getOrderTitle(List<Integer> order);
 
-	void setNewMenuAllergens(String allergensFile) throws FileNotFoundException;
-
-	IAllergen getMenuAllergens();
-
+	/**
+	 * Performs a search across the menu for matching product names or keywords.
+	 *
+	 * @param query the search string
+	 * @return the search results as a formatted string
+	 */
 	String search(String query);
 
+	/**
+	 * Returns the top 10 search results based on relevance or popularity.
+	 *
+	 * @param query the search string
+	 * @return the top 10 results as a formatted string
+	 */
 	String searchTop10(String query);
 
 	/**
@@ -25,7 +44,7 @@ public interface IMenu {
 	 * @param ids   the list of item IDs to add
 	 * @param order the current order to modify
 	 */
-	void addMultipleToOrder(List<Integer> ids, List<Integer> order);
+	List<Integer> addMultipleToOrder(List<Integer> ids, List<Integer> order);
 
 	/**
 	 * Adds a single item to the given order list based on configuration rules.
@@ -33,7 +52,7 @@ public interface IMenu {
 	 * @param id    the ID of the item to add
 	 * @param order the current order to modify
 	 */
-	void addToOrder(int id, List<Integer> order);
+	List<Integer> addToOrder(int id, List<Integer> order);
 
 	/**
 	 * Gets all nested item IDs under a specified product, including all
@@ -53,10 +72,12 @@ public interface IMenu {
 
 	/**
 	 * Calculates the total price of all orders in the cart.
+	 * 
+	 * @param cart
 	 *
 	 * @return the total cart price
 	 */
-	int getCartTotalPrice();
+	int getCartTotalPrice(List<List<Integer>> cart);
 
 	/**
 	 * Retrieves the description of a product based on its ID.
@@ -78,15 +99,15 @@ public interface IMenu {
 	 * Finds and returns the product JSON object with the given ID.
 	 *
 	 * @param id the product ID
-	 * @return the JSON object for the product, or null if not found
+	 * @return the JSON object for the product, or {@code null} if not found
 	 */
 	JsonObject getProductById(int id);
 
 	/**
 	 * Finds and returns the ref JSON object with the given ID.
 	 *
-	 * @param id the product ID
-	 * @return the JSON object for the ref, or null if not found
+	 * @param id the ref ID
+	 * @return the JSON object for the ref, or {@code null} if not found
 	 */
 	JsonObject getRefById(int id);
 
@@ -103,7 +124,7 @@ public interface IMenu {
 	 * Retrieves the title of a product based on its ID.
 	 *
 	 * @param id the product ID
-	 * @return the product title, or "Unknown" if not found
+	 * @return the product title, or {@code "Unknown"} if not found
 	 */
 	String getTitleForId(int id);
 
@@ -112,7 +133,7 @@ public interface IMenu {
 	 *
 	 * @return a formatted string showing each order and the cart total
 	 */
-	String printCart();
+	String printCart(List<List<Integer>> cart);
 
 	/**
 	 * Prints a single order in a readable format, including selected options and
@@ -138,7 +159,7 @@ public interface IMenu {
 	 * @param id    the ID of the item to remove
 	 * @param order the current order to modify
 	 */
-	void removeFromOrder(int id, List<Integer> order);
+	List<Integer> removeFromOrder(int id, List<Integer> order);
 
 	/**
 	 * Removes multiple items from the given order.
@@ -146,7 +167,7 @@ public interface IMenu {
 	 * @param ids   the list of item IDs to remove
 	 * @param order the current order to modify
 	 */
-	void removeMultipleFromOrder(List<Integer> ids, List<Integer> order);
+	List<Integer> removeMultipleFromOrder(List<Integer> ids, List<Integer> order);
 
 	/**
 	 * Removes the given order from the cart.
@@ -163,5 +184,4 @@ public interface IMenu {
 	 * @return a list of selected item IDs representing the new order
 	 */
 	List<Integer> startOrder(int rootId);
-
 }

@@ -25,18 +25,19 @@ import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 
 import teneo.MenuExplorer.server.MenuSmartSearch.MenuItem;
-import teneo.MenuExplorer.shared.IAllergen;
-import teneo.MenuExplorer.shared.IMenu;
 
+/**
+ * This class implements the main core logic of the MenuExplorer, starting
+ * orders, cart, product trees.
+ */
 @Service
 public class MenuExplorerLogic implements IMenu {
 
-	private final Map<String, JsonObject> refs = new HashMap<>();
-	private final List<JsonObject> products = new ArrayList<>();
+	private static final Map<String, JsonObject> refs = new HashMap<>();
+	private static final List<JsonObject> products = new ArrayList<>();
 	private final List<List<Integer>> cart = new ArrayList<>();
-	private final List<MenuItem> searchMenu = new ArrayList<>();
-	private final Map<Integer, Set<Integer>> parentMap = new HashMap<>();
-	private IAllergen allergens;
+	private static final List<MenuItem> searchMenu = new ArrayList<>();
+	private static final Map<Integer, Set<Integer>> parentMap = new HashMap<>();
 
 	/**
 	 * Constructs a new MenuExplorer by loading menu data from the specified JSON
@@ -45,7 +46,7 @@ public class MenuExplorerLogic implements IMenu {
 	 * @param filePath the path to the JSON file containing menu data
 	 * @throws FileNotFoundException if the specified file does not exist
 	 */
-	public MenuExplorerLogic(@Value("${menuPath}")String filePath) throws FileNotFoundException {
+	public MenuExplorerLogic(@Value("${menuPath}") String filePath) throws FileNotFoundException {
 		loadJsonData(filePath);
 		buildParentMap();
 		if (MenuSmartSearch.searchEnabled() == true) {
@@ -56,37 +57,32 @@ public class MenuExplorerLogic implements IMenu {
 			}
 		}
 	}
-	
+
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public String getOrderTitle(List<Integer> order) {
-	    if (order == null || order.isEmpty()) {
-	        return ("Order list is null or empty");
-	    }
+		if (order == null || order.isEmpty()) {
+			return ("Order list is null or empty");
+		}
 
-	    JsonObject ref = getRefById(order.get(0));
-	    if (ref == null) {
-	        return ("No reference found for order ID: " + order.get(0));
-	    }
+		JsonObject ref = getRefById(order.get(0));
+		if (ref == null) {
+			return ("No reference found for order ID: " + order.get(0));
+		}
 
-	    JsonElement titleElement = ref.get("Title");
-	    if (titleElement == null || titleElement.isJsonNull()) {
-	        return ("No 'Title' field found in reference for order ID: " + order.get(0));
-	    }
+		JsonElement titleElement = ref.get("Title");
+		if (titleElement == null || titleElement.isJsonNull()) {
+			return ("No 'Title' field found in reference for order ID: " + order.get(0));
+		}
 
-	    return titleElement.getAsString();
+		return titleElement.getAsString();
 	}
 
-	
-	@Override
-	public void setNewMenuAllergens(String allergensFile) throws FileNotFoundException {
-		allergens = new MenuAllergensLogic(allergensFile);
-	}
-	
-	@Override
-	public IAllergen getMenuAllergens() {
-		return allergens;
-	}
-	
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public String search(String query) {
 		if (MenuSmartSearch.searchEnabled()) {
@@ -94,60 +90,53 @@ public class MenuExplorerLogic implements IMenu {
 		}
 		return null;
 	}
-	
+
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public String searchTop10(String query) {
 		if (MenuSmartSearch.searchEnabled()) {
-	        List<MenuItem> topMatches = MenuSmartSearch.matchTop10(query, searchMenu);
-	        StringBuilder result = new StringBuilder();
-	        for (MenuItem item : topMatches) {
-	            result.append(item.name)
-	                  .append(" - ")
-	                  .append(item.id)
-	                  .append("\n");
-	        }
-	        return result.toString().trim();
+			List<MenuItem> topMatches = MenuSmartSearch.matchTop10(query, searchMenu);
+			StringBuilder result = new StringBuilder();
+			for (MenuItem item : topMatches) {
+				result.append(item.name).append(" - ").append(item.id).append("\n");
+			}
+			return result.toString().trim();
 		}
 		return null;
 	}
 
-
 	/**
-	 * Adds multiple items to the order by calling {@code addToOrder} for each item
-	 * ID.
-	 *
-	 * @param ids   the list of item IDs to add
-	 * @param order the current order to modify
+	 * {@inheritDoc}
 	 */
 	@Override
-	public void addMultipleToOrder(List<Integer> ids, List<Integer> order) {
+	public List<Integer> addMultipleToOrder(List<Integer> ids, List<Integer> order) {
 		for (int id : ids) {
 			addToOrder(id, order);
 		}
+		return order;
 	}
 
 	/**
-	 * Adds a single item to the given order list based on configuration rules.
-	 *
-	 * @param id    the ID of the item to add
-	 * @param order the current order to modify
+	 * {@inheritDoc}
 	 */
 	@Override
-	public void addToOrder(int id, List<Integer> order) {
+	public List<Integer> addToOrder(int id, List<Integer> order) {
 		if (order == null || order.isEmpty()) {
-			return;
+			return order;
 		}
 
 		// Step 1: Path to root from the new id
 		List<Integer> path = pathToRoot(id, order);
 		if (path.isEmpty()) {
-			return;
+			return order;
 		}
 
 		// Step 2: Deepest shared ancestor with current order
 		List<Integer> matchingChain = findDeepestMatchingChain(path, order);
 		if (matchingChain.isEmpty()) {
-			return;
+			return order;
 		}
 
 		int splitId = matchingChain.get(matchingChain.size() - 1);
@@ -157,7 +146,7 @@ public class MenuExplorerLogic implements IMenu {
 			// Re-adding same item (e.g., ketchup x2), allowed only if parent supports it
 
 			if (path.size() < 2) {
-				return; // Sanity check, must have parent + self
+				return order; // Sanity check, must have parent + self
 			}
 
 			int parentId = path.get(path.size() - 2); // Get parent of the current id
@@ -181,14 +170,14 @@ public class MenuExplorerLogic implements IMenu {
 					// 9 limit for any individual item
 					long count = order.stream().filter(e -> e == id).count();
 					if (count >= 9) {
-						return; // too many of this item already
+						return order; // too many of this item already
 					}
 
 					order.add(id); // only add the final leaf again, not full path
 				}
 			}
 
-			return; // Always return since we’re handling this branch specially
+			return order; // Always return since we’re handling this branch specially
 		}
 
 		boolean shouldPrune = true;
@@ -235,8 +224,17 @@ public class MenuExplorerLogic implements IMenu {
 		if (node != null) {
 			applyDefaults(node, order);
 		}
+
+		return order;
 	}
 
+	/**
+	 * Applies default selections recursively from the given node into the order
+	 * list.
+	 *
+	 * @param node  the current product node
+	 * @param order the current order being modified
+	 */
 	private void applyDefaults(JsonObject node, List<Integer> order) {
 		// Ensure this node is in the order
 		if (node.has("Id")) {
@@ -306,6 +304,9 @@ public class MenuExplorerLogic implements IMenu {
 		}
 	}
 
+	/**
+	 * Builds the parent-child mapping for all products for traversal.
+	 */
 	private void buildParentMap() {
 		parentMap.clear();
 		for (JsonObject product : products) {
@@ -316,6 +317,12 @@ public class MenuExplorerLogic implements IMenu {
 		}
 	}
 
+	/**
+	 * Recursively builds the parent map for a given node and its children.
+	 *
+	 * @param node     the current product node
+	 * @param parentId the ID of the node's parent
+	 */
 	private void buildParentMapRecursive(JsonObject node, int parentId) {
 		for (String key : List.of("Items", "Choices", "Configurables")) {
 			if (node.has(key)) {
@@ -324,7 +331,7 @@ public class MenuExplorerLogic implements IMenu {
 					if (child.has("Id")) {
 						int childId = child.get("Id").getAsInt();
 						parentMap.computeIfAbsent(childId, throwaway -> new HashSet<>()).add(parentId);
-						//remove throwaway in future
+						// remove throwaway in future
 						buildParentMapRecursive(child, childId);
 					}
 				}
@@ -332,6 +339,12 @@ public class MenuExplorerLogic implements IMenu {
 		}
 	}
 
+	/**
+	 * Collects all sub-item IDs from the given node recursively.
+	 *
+	 * @param node   the current product node
+	 * @param subIds the set collecting all sub-item IDs
+	 */
 	private void collectSubIdsRecursive(JsonObject node, Set<Integer> subIds) {
 		if (node.has("Id")) {
 			int nodeId = node.get("Id").getAsInt();
@@ -351,6 +364,14 @@ public class MenuExplorerLogic implements IMenu {
 		}
 	}
 
+	/**
+	 * Finds the deepest common chain of nodes from the path that already exists in
+	 * the order.
+	 *
+	 * @param pathToRoot the list of IDs from a node to the root
+	 * @param order      the current order
+	 * @return a sublist of the path that matches the order
+	 */
 	private List<Integer> findDeepestMatchingChain(List<Integer> pathToRoot, List<Integer> order) {
 		Set<Integer> orderSet = new HashSet<>(order); // For fast lookup
 		List<Integer> result = new ArrayList<>();
@@ -366,6 +387,13 @@ public class MenuExplorerLogic implements IMenu {
 		return result;
 	}
 
+	/**
+	 * Finds a node by its ID within the product tree starting from the given node.
+	 *
+	 * @param node     the current root node to search from
+	 * @param targetId the ID to locate
+	 * @return the matching JsonObject node, or null if not found
+	 */
 	private JsonObject findNodeById(JsonObject node, int targetId) {
 		if (node.has("Id") && node.get("Id").getAsInt() == targetId) {
 			return node;
@@ -385,6 +413,12 @@ public class MenuExplorerLogic implements IMenu {
 		return null;
 	}
 
+	/**
+	 * Formats a suffix string to show the count of selected items.
+	 *
+	 * @param count the number of selected items
+	 * @return formatted suffix (e.g., " (2 selected)")
+	 */
 	private String formatSelectionSuffix(Long count) {
 		if (count == null || count == 0) {
 			return "";
@@ -393,11 +427,7 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Gets all nested item IDs under a specified product, including all
-	 * descendants.
-	 *
-	 * @param rootId the product ID to search under
-	 * @return a set of all descendant item IDs
+	 * {@inheritDoc}
 	 */
 	@Override
 	public Set<Integer> getAllSubIds(int rootId) {
@@ -410,9 +440,7 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Returns the current cart (list of all orders).
-	 *
-	 * @return the cart containing all current orders
+	 * {@inheritDoc}
 	 */
 	@Override
 	public List<List<Integer>> getCart() {
@@ -420,12 +448,10 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Calculates the total price of all orders in the cart.
-	 *
-	 * @return the total cart price
+	 * {@inheritDoc}
 	 */
 	@Override
-	public int getCartTotalPrice() {
+	public int getCartTotalPrice(List<List<Integer>> cart) {
 		int totalPrice = 0;
 		for (List<Integer> order : cart) {
 			totalPrice += getOrderPrice(order);
@@ -434,10 +460,7 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Retrieves the description of a product based on its ID.
-	 *
-	 * @param id the product ID
-	 * @return the product description, or an error message if not found
+	 * {@inheritDoc}
 	 */
 	@Override
 	public String getDescriptionFromId(int id) {
@@ -453,10 +476,7 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Calculates the total price of a single order.
-	 *
-	 * @param order the order to calculate price for
-	 * @return the total price of the order
+	 * {@inheritDoc}
 	 */
 	@Override
 	public int getOrderPrice(List<Integer> order) {
@@ -481,10 +501,7 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Finds and returns the product JSON object with the given ID.
-	 *
-	 * @param id the product ID
-	 * @return the JSON object for the product, or null if not found
+	 * {@inheritDoc}
 	 */
 	@Override
 	public JsonObject getProductById(int id) {
@@ -495,12 +512,9 @@ public class MenuExplorerLogic implements IMenu {
 		}
 		return null;
 	}
-	
+
 	/**
-	 * Finds and returns the ref JSON object with the given ID.
-	 *
-	 * @param id the product ID
-	 * @return the JSON object for the ref, or null if not found
+	 * {@inheritDoc}
 	 */
 	@Override
 	public JsonObject getRefById(int id) {
@@ -512,7 +526,12 @@ public class MenuExplorerLogic implements IMenu {
 		return null;
 	}
 
-
+	/**
+	 * Retrieves the reference object for the given product node.
+	 *
+	 * @param obj the product node
+	 * @return the reference JsonObject
+	 */
 	private JsonObject getRefFor(JsonObject obj) {
 		if (!obj.has("Id")) {
 			return null;
@@ -522,11 +541,7 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Gets all nested item IDs under a specified cutoff node within a base product.
-	 *
-	 * @param baseId   the base product ID
-	 * @param cutoffId the node ID under which to collect sub-IDs
-	 * @return a set of descendant item IDs under the cutoff node
+	 * {@inheritDoc}
 	 */
 	@Override
 	public Set<Integer> getSubIdsUnder(int baseId, int cutoffId) {
@@ -545,6 +560,12 @@ public class MenuExplorerLogic implements IMenu {
 		return result;
 	}
 
+	/**
+	 * Extracts and returns tags from a reference node.
+	 *
+	 * @param ref the reference JsonObject
+	 * @return a list of tag strings
+	 */
 	private List<String> getTags(JsonObject ref) {
 		if (ref == null || !ref.has("Tags")) {
 			return Collections.emptyList();
@@ -554,10 +575,7 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Retrieves the title of a product based on its ID.
-	 *
-	 * @param id the product ID
-	 * @return the product title, or "Unknown" if not found
+	 * {@inheritDoc}
 	 */
 	@Override
 	public String getTitleForId(int id) {
@@ -568,11 +586,23 @@ public class MenuExplorerLogic implements IMenu {
 		return "Unknown";
 	}
 
+	/**
+	 * Determines whether a JSON object is both default and checked.
+	 *
+	 * @param obj the JSON object to evaluate
+	 * @return true if default and checked, false otherwise
+	 */
 	private boolean isDefault(JsonObject obj) {
 		return obj.has("IsDefault") && obj.get("IsDefault").getAsBoolean() && obj.has("Checked")
 				&& obj.get("Checked").getAsBoolean();
 	}
 
+	/**
+	 * Loads the menu JSON file and initializes product and reference maps.
+	 *
+	 * @param filePath the path to the menu JSON file
+	 * @throws FileNotFoundException if the file does not exist
+	 */
 	private void loadJsonData(String filePath) throws FileNotFoundException {
 		Gson gson = new Gson();
 		JsonObject root = gson.fromJson(new FileReader(filePath), JsonObject.class);
@@ -589,6 +619,13 @@ public class MenuExplorerLogic implements IMenu {
 		products.addAll(gson.fromJson(root.getAsJsonArray("Products"), listType));
 	}
 
+	/**
+	 * Computes the path from the given ID to the root node within the order.
+	 *
+	 * @param targetId the ID to trace upward
+	 * @param order    the current order
+	 * @return a list of IDs forming the path from target to root
+	 */
 	private List<Integer> pathToRoot(int targetId, List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return Collections.emptyList();
@@ -604,12 +641,10 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Prints all orders in the cart in a human-readable format.
-	 *
-	 * @return a formatted string showing each order and the cart total
+	 * {@inheritDoc}
 	 */
 	@Override
-	public String printCart() {
+	public String printCart(List<List<Integer>> cart) {
 		if (cart.isEmpty()) {
 			return "Cart is empty.";
 		}
@@ -622,16 +657,12 @@ public class MenuExplorerLogic implements IMenu {
 			index++;
 		}
 
-		sb.append("Cart Total Price: ").append(getCartTotalPrice()).append("\n");
+		sb.append("Cart Total Price: ").append(getCartTotalPrice(cart)).append("\n");
 		return sb.toString();
 	}
 
 	/**
-	 * Prints a single order in a readable format, including selected options and
-	 * price.
-	 *
-	 * @param order the order to print
-	 * @return a formatted string representing the order
+	 * {@inheritDoc}
 	 */
 	@Override
 	public String printOrder(List<Integer> order) {
@@ -657,11 +688,7 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Prints the full menu structure for a given order, including all configurable
-	 * options.
-	 *
-	 * @param order the order to display options for
-	 * @return a formatted string showing all selectable options
+	 * {@inheritDoc}
 	 */
 	@Override
 	public String printOrderOptions(List<Integer> order) {
@@ -681,6 +708,14 @@ public class MenuExplorerLogic implements IMenu {
 		return sb.toString();
 	}
 
+	/**
+	 * Recursively prints selected items in the order with indentation.
+	 *
+	 * @param node   the current product node
+	 * @param counts a map of selected ID to quantity
+	 * @param indent the current indentation level
+	 * @param sb     the StringBuilder to append output to
+	 */
 	private void printOrderRecursive(JsonObject node, Map<Integer, Long> counts, int indent, StringBuilder sb) {
 		String indentStr = "  ".repeat(indent);
 
@@ -702,6 +737,14 @@ public class MenuExplorerLogic implements IMenu {
 		}
 	}
 
+	/**
+	 * Recursively prints all configuration options with indentation.
+	 *
+	 * @param node   the current product node
+	 * @param counts a map of selected ID to quantity
+	 * @param indent the current indentation level
+	 * @param sb     the StringBuilder to append output to
+	 */
 	private void printTreeRecursive(JsonObject node, Map<Integer, Long> counts, int indent, StringBuilder sb) {
 		String indentStr = "  ".repeat(indent);
 		for (String key : List.of("Configurables", "Items", "Choices")) {
@@ -719,21 +762,18 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Removes an item (or its subtree) from the given order based on its structure.
-	 *
-	 * @param id    the ID of the item to remove
-	 * @param order the current order to modify
+	 * {@inheritDoc}
 	 */
 	@Override
-	public void removeFromOrder(int id, List<Integer> order) {
+	public List<Integer> removeFromOrder(int id, List<Integer> order) {
 		if (order == null || order.isEmpty()) {
-			return;
+			return order;
 		}
 
 		// Step 1: Path to root from the id to remove
 		List<Integer> path = pathToRoot(id, order);
 		if (path.isEmpty()) {
-			return;
+			return order;
 		}
 
 		// Step 2: Deepest matching chain with current order
@@ -741,7 +781,7 @@ public class MenuExplorerLogic implements IMenu {
 		// If path and matching chain do not fully match, id not in order tree → do
 		// nothing
 		if (matchingChain.isEmpty() || !path.equals(matchingChain)) {
-			return;
+			return order;
 		}
 
 		// Count how many instances of id are currently in order
@@ -750,7 +790,7 @@ public class MenuExplorerLogic implements IMenu {
 		if (count > 1) {
 			// Just remove one instance (avoid removing entire subtree)
 			order.remove(Integer.valueOf(id));
-			return;
+			return order;
 		}
 
 		// Only one instance → perform full removal of subtree starting at this id
@@ -795,25 +835,22 @@ public class MenuExplorerLogic implements IMenu {
 				}
 			}
 		}
+		return order;
 	}
 
 	/**
-	 * Removes multiple items from the given order.
-	 *
-	 * @param ids   the list of item IDs to remove
-	 * @param order the current order to modify
+	 * {@inheritDoc}
 	 */
 	@Override
-	public void removeMultipleFromOrder(List<Integer> ids, List<Integer> order) {
+	public List<Integer> removeMultipleFromOrder(List<Integer> ids, List<Integer> order) {
 		for (int id : ids) {
 			removeFromOrder(id, order);
 		}
+		return order;
 	}
 
 	/**
-	 * Removes the given order from the cart.
-	 *
-	 * @param order the order to remove
+	 * {@inheritDoc}
 	 */
 	@Override
 	public void removeOrder(List<Integer> order) {
@@ -823,6 +860,14 @@ public class MenuExplorerLogic implements IMenu {
 		cart.remove(order);
 	}
 
+	/**
+	 * Removes a subtree of selected items under the specified cutoffId from the
+	 * order.
+	 *
+	 * @param cutoffId the root ID of the subtree to remove
+	 * @param order    the current order
+	 * @return a new order list with the subtree removed
+	 */
 	private List<Integer> removeSubtreeFromOrder(int cutoffId, List<Integer> order) {
 		if (order == null || order.isEmpty()) {
 			return order;
@@ -834,11 +879,7 @@ public class MenuExplorerLogic implements IMenu {
 	}
 
 	/**
-	 * Starts a new order with the given root product ID, applying any default
-	 * selections.
-	 *
-	 * @param rootId the root product ID to start the order with
-	 * @return a list of selected item IDs representing the new order
+	 * {@inheritDoc}
 	 */
 	@Override
 	public List<Integer> startOrder(int rootId) {
@@ -855,6 +896,16 @@ public class MenuExplorerLogic implements IMenu {
 		return order;
 	}
 
+	/**
+	 * Traverses upward from a child node to the root, recording a valid path.
+	 *
+	 * @param currentId   the starting ID
+	 * @param validSubIds the set of valid sub-IDs to consider
+	 * @param order       the current order
+	 * @param visited     a set of already visited IDs to avoid cycles
+	 * @param path        the resulting path from node to root
+	 * @return true if a valid path was found, false otherwise
+	 */
 	private boolean walkToRoot(int currentId, Set<Integer> validSubIds, List<Integer> order, Set<Integer> visited,
 			LinkedList<Integer> path) {
 		if (!validSubIds.contains(currentId) || !visited.add(currentId)) {

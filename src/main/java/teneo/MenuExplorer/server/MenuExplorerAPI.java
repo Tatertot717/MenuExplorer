@@ -1,140 +1,145 @@
 package teneo.MenuExplorer.server;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
-import teneo.MenuExplorer.shared.IAllergen;
-import teneo.MenuExplorer.shared.IMenu;
-
-import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Set;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.google.gson.JsonObject;
 
+/**
+ * REST controller that exposes endpoints for interacting with the menu and cart
+ * system.
+ * <p>
+ * This API allows clients to search for products, manage orders and carts,
+ * retrieve item details, and calculate pricing. It delegates all operations to
+ * the shared {@link IMenu} service, implemented with {@link MenuExplorerLogic}.
+ * <p>
+ * All endpoints are prefixed with {@code /api}.
+ */
 @RestController
 @RequestMapping("/api")
 public class MenuExplorerAPI {
 
-    private final IMenu menu;
+	private final IMenu menu;
 
-    @Autowired
-    public MenuExplorerAPI(IMenu menu) {
-        this.menu = menu;
-    }
+	@Autowired
+	public MenuExplorerAPI(IMenu menu) {
+		this.menu = menu;
+	}
 
-    @PostMapping("/getOrderTitle")
-    public String getOrderTitle(@RequestBody List<Integer> order) {
-        return menu.getOrderTitle(order);
-    }
+	@PostMapping("/getOrderTitle")
+	public String getOrderTitle(@RequestBody List<Integer> order) {
+		return menu.getOrderTitle(order);
+	}
 
-    @PostMapping("/setNewMenuAllergens")
-    public void setNewMenuAllergens(@RequestParam String allergensFile) throws FileNotFoundException {
-        menu.setNewMenuAllergens(allergensFile);
-    }
+	@GetMapping("/search")
+	public String search(@RequestParam String query) {
+		return menu.search(query);
+	}
 
-    @GetMapping("/getMenuAllergens")
-    public IAllergen getMenuAllergens() {
-        return menu.getMenuAllergens();
-    }
+	@GetMapping("/searchTop10")
+	public String searchTop10(@RequestParam String query) {
+		return menu.searchTop10(query);
+	}
 
-    @GetMapping("/search")
-    public String search(@RequestParam String query) {
-        return menu.search(query);
-    }
+	@PostMapping("/addMultipleToOrder")
+	public List<Integer> addMultipleToOrder(@RequestParam List<Integer> ids, @RequestBody List<Integer> order) {
+		return menu.addMultipleToOrder(ids, order);
+	}
 
-    @GetMapping("/searchTop10")
-    public String searchTop10(@RequestParam String query) {
-        return menu.searchTop10(query);
-    }
+	@PostMapping("/addToOrder")
+	public List<Integer> addToOrder(@RequestParam int id, @RequestBody List<Integer> order) {
+		return menu.addToOrder(id, order);
+	}
 
-    @PostMapping("/addMultipleToOrder")
-    public void addMultipleToOrder(@RequestParam List<Integer> ids, @RequestBody List<Integer> order) {
-        menu.addMultipleToOrder(ids, order);
-    }
+	@GetMapping("/getAllSubIds")
+	public Set<Integer> getAllSubIds(@RequestParam int rootId) {
+		return menu.getAllSubIds(rootId);
+	}
 
-    @PostMapping("/addToOrder")
-    public void addToOrder(@RequestParam int id, @RequestBody List<Integer> order) {
-        menu.addToOrder(id, order);
-    }
+	/*
+	 * Handled client now, route not needed.
+	 * 
+	 * @GetMapping("/getCart") public List<List<Integer>> getCart() { return
+	 * menu.getCart(); }
+	 */
 
-    @GetMapping("/getAllSubIds")
-    public Set<Integer> getAllSubIds(@RequestParam int rootId) {
-        return menu.getAllSubIds(rootId);
-    }
+	@PostMapping("/getCartTotalPrice")
+	public int getCartTotalPrice(@RequestBody List<List<Integer>> cart) {
+		return menu.getCartTotalPrice(cart);
+	}
 
-    @GetMapping("/getCart")
-    public List<List<Integer>> getCart() {
-        return menu.getCart();
-    }
+	@GetMapping("/getDescriptionFromId")
+	public String getDescriptionFromId(@RequestParam int id) {
+		return menu.getDescriptionFromId(id);
+	}
 
-    @GetMapping("/getCartTotalPrice")
-    public int getCartTotalPrice() {
-        return menu.getCartTotalPrice();
-    }
+	@PostMapping("/getOrderPrice")
+	public int getOrderPrice(@RequestBody List<Integer> order) {
+		return menu.getOrderPrice(order);
+	}
 
-    @GetMapping("/getDescriptionFromId")
-    public String getDescriptionFromId(@RequestParam int id) {
-        return menu.getDescriptionFromId(id);
-    }
+	@GetMapping("/getProductById")
+	public JsonObject getProductById(@RequestParam int id) {
+		return menu.getProductById(id);
+	}
 
-    @PostMapping("/getOrderPrice")
-    public int getOrderPrice(@RequestBody List<Integer> order) {
-        return menu.getOrderPrice(order);
-    }
+	@GetMapping("/getRefById")
+	public JsonObject getRefById(@RequestParam int id) {
+		return menu.getRefById(id);
+	}
 
-    @GetMapping("/getProductById")
-    public JsonObject getProductById(@RequestParam int id) {
-        return menu.getProductById(id);
-    }
+	@GetMapping("/getSubIdsUnder")
+	public Set<Integer> getSubIdsUnder(@RequestParam int baseId, @RequestParam int cutoffId) {
+		return menu.getSubIdsUnder(baseId, cutoffId);
+	}
 
-    @GetMapping("/getRefById")
-    public JsonObject getRefById(@RequestParam int id) {
-        return menu.getRefById(id);
-    }
+	@GetMapping("/getTitleForId")
+	public String getTitleForId(@RequestParam int id) {
+		return menu.getTitleForId(id);
+	}
 
-    @GetMapping("/getSubIdsUnder")
-    public Set<Integer> getSubIdsUnder(@RequestParam int baseId, @RequestParam int cutoffId) {
-        return menu.getSubIdsUnder(baseId, cutoffId);
-    }
+	@PostMapping("/printCart")
+	public String printCart(@RequestBody List<List<Integer>> cart) {
+		return menu.printCart(cart);
+	}
 
-    @GetMapping("/getTitleForId")
-    public String getTitleForId(@RequestParam int id) {
-        return menu.getTitleForId(id);
-    }
+	@PostMapping("/printOrder")
+	public String printOrder(@RequestBody List<Integer> order) {
+		return menu.printOrder(order);
+	}
 
-    @GetMapping("/printCart")
-    public String printCart() {
-        return menu.printCart();
-    }
+	@PostMapping("/printOrderOptions")
+	public String printOrderOptions(@RequestBody List<Integer> order) {
+		return menu.printOrderOptions(order);
+	}
 
-    @PostMapping("/printOrder")
-    public String printOrder(@RequestBody List<Integer> order) {
-        return menu.printOrder(order);
-    }
+	@PostMapping("/removeFromOrder")
+	public List<Integer> removeFromOrder(@RequestParam int id, @RequestBody List<Integer> order) {
+		return menu.removeFromOrder(id, order);
+	}
 
-    @PostMapping("/printOrderOptions")
-    public String printOrderOptions(@RequestBody List<Integer> order) {
-        return menu.printOrderOptions(order);
-    }
+	@PostMapping("/removeMultipleFromOrder")
+	public List<Integer> removeMultipleFromOrder(@RequestParam List<Integer> ids, @RequestBody List<Integer> order) {
+		return menu.removeMultipleFromOrder(ids, order);
+	}
 
-    @PostMapping("/removeFromOrder")
-    public void removeFromOrder(@RequestParam int id, @RequestBody List<Integer> order) {
-        menu.removeFromOrder(id, order);
-    }
+	/*
+	 * Handled client now, route not needed.
+	 * 
+	 * @PostMapping("/removeOrder") public void removeOrder(@RequestBody
+	 * List<Integer> order) { menu.removeOrder(order); }
+	 */
 
-    @PostMapping("/removeMultipleFromOrder")
-    public void removeMultipleFromOrder(@RequestParam List<Integer> ids, @RequestBody List<Integer> order) {
-        menu.removeMultipleFromOrder(ids, order);
-    }
-
-    @PostMapping("/removeOrder")
-    public void removeOrder(@RequestBody List<Integer> order) {
-        menu.removeOrder(order);
-    }
-
-    @PostMapping("/startOrder")
-    public List<Integer> startOrder(@RequestParam int rootId) {
-        return menu.startOrder(rootId);
-    }
+	@PostMapping("/startOrder")
+	public List<Integer> startOrder(@RequestParam int rootId) {
+		return menu.startOrder(rootId);
+	}
 }

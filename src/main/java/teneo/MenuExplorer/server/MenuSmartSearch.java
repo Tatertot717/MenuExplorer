@@ -12,28 +12,31 @@ import org.deeplearning4j.models.embeddings.loader.WordVectorSerializer;
 import org.deeplearning4j.models.embeddings.wordvectors.WordVectors;
 import org.nd4j.linalg.api.ndarray.INDArray;
 
+/**
+ * Uses word similarity vectors to search on a dictionary
+ */
 public class MenuSmartSearch {
 
-	//record ScoredItem(MenuItem item, double score) {}
-	//The above is not available in java 11, use this mess below
+	// record ScoredItem(MenuItem item, double score) {}
+	// The above is not available in java 11, use this mess below
 	public static class ScoredItem {
-	    public final MenuItem item;
-	    public final double score;
+		public final MenuItem item;
+		public final double score;
 
-	    public ScoredItem(MenuItem item, double score) {
-	        this.item = item;
-	        this.score = score;
-	    }
+		public ScoredItem(MenuItem item, double score) {
+			this.item = item;
+			this.score = score;
+		}
 
-	    public MenuItem item() {
-	        return item;
-	    }
+		public MenuItem item() {
+			return item;
+		}
 
-	    public double score() {
-	        return score;
-	    }
+		public double score() {
+			return score;
+		}
 	}
-	
+
 	public static class MenuItem {
 		public final String name;
 		public final int id;
@@ -97,29 +100,28 @@ public class MenuSmartSearch {
 		}
 		return best;
 	}
-	
+
 	public static List<MenuItem> matchTop10(String userInput, List<MenuItem> menu) {
-	    INDArray inputVec = embedSentence(userInput);
-	    if (inputVec == null)
-	        return Collections.emptyList();
+		INDArray inputVec = embedSentence(userInput);
+		if (inputVec == null)
+			return Collections.emptyList();
 
-	    List<ScoredItem> scoredItems = new ArrayList<>();
+		List<ScoredItem> scoredItems = new ArrayList<>();
 
-	    for (MenuItem item : menu) {
-	        double sim = cosineSimilarity(inputVec, item.vector);
-	        scoredItems.add(new ScoredItem(item, sim));
-	    }
+		for (MenuItem item : menu) {
+			double sim = cosineSimilarity(inputVec, item.vector);
+			scoredItems.add(new ScoredItem(item, sim));
+		}
 
-	    scoredItems.sort((a, b) -> Double.compare(b.score(), a.score()));
+		scoredItems.sort((a, b) -> Double.compare(b.score(), a.score()));
 
-	    List<MenuItem> top10 = new ArrayList<>();
-	    for (int i = 0; i < Math.min(10, scoredItems.size()); i++) {
-	        top10.add(scoredItems.get(i).item());
-	    }
+		List<MenuItem> top10 = new ArrayList<>();
+		for (int i = 0; i < Math.min(10, scoredItems.size()); i++) {
+			top10.add(scoredItems.get(i).item());
+		}
 
-	    return top10;
+		return top10;
 	}
-
 
 	private static double cosineSimilarity(INDArray v1, INDArray v2) {
 		return v1.mul(v2).sumNumber().doubleValue() / (v1.norm2Number().doubleValue() * v2.norm2Number().doubleValue());

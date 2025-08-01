@@ -1,27 +1,46 @@
-package teneo.MenuExplorer.client;
+package teneo.MenuExplorer.server;
 
+import java.io.FileNotFoundException;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 /**
- * This class shows an example of how to implement the client.
+ * This class is meant to test the logic of the underlying classes. Does not
+ * test the api.
+ * 
  */
-public class ClientTest {
-	private static MenuExplorer explorer;
-	private static Allergens allergens;
+public class ServerTest {
+	private static IMenu explorer;
+	private static IAllergen allergens;
 	private static List<Integer> order = new ArrayList<>();
 	private static final Scanner scanner = new Scanner(System.in);
 	private static List<List<Integer>> cart;
+	private static final boolean LOAD_MSS = true;
 
 	public static void main(String[] args) {
-		String baseUrl = "http://localhost:8080";
+		try {
+			if (LOAD_MSS) {
+				System.out.println("Loading model...");
+				Instant start = Instant.now();
+				MenuSmartSearch.loadModel("./glove.2024.wikigiga.100d.zip"); // about 1gb in size, uncompressed
+				Instant end = Instant.now();
 
-		explorer = new MenuExplorer(baseUrl);
-		cart = explorer.getCart();
-		allergens = new Allergens(baseUrl);
+				long secondsElapsed = Duration.between(start, end).getSeconds();
+				System.out.println("Finished loading model in: " + secondsElapsed + " seconds");
+			}
 
+			explorer = new MenuExplorerLogic("./maxmenu.json");
+			allergens = new MenuAllergensLogic("./allergens.json");
+
+			cart = explorer.getCart();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			return;
+		}
 		System.out.println("Menu Explorer CLI started. Type 'help' for list of commands.");
 
 		while (true) {
@@ -61,8 +80,30 @@ public class ClientTest {
 						System.out.println("Usage: a <itemId>");
 					} else {
 						int itemId = Integer.parseInt(parts[1]);
-						order = explorer.addToOrder(itemId, order);
+						explorer.addToOrder(itemId, order);
 						System.out.println("Added item " + itemId);
+					}
+					break;
+
+				case "all":
+				case "allergens":
+					if (parts.length < 2) {
+						System.out.println("Usage: all <item name>");
+					} else {
+						String output = allergens
+								.searchAllergens(String.join(" ", Arrays.copyOfRange(parts, 1, parts.length)));
+						System.out.println("Added item " + output);
+					}
+					break;
+
+				case "i":
+				case "ingredients":
+					if (parts.length < 2) {
+						System.out.println("Usage: i <item name>");
+					} else {
+						String output = allergens
+								.searchIngredients(String.join(" ", Arrays.copyOfRange(parts, 1, parts.length)));
+						System.out.println("Added item " + output);
 					}
 					break;
 
@@ -72,7 +113,7 @@ public class ClientTest {
 						System.out.println("Usage: r <itemId>");
 					} else {
 						int itemId = Integer.parseInt(parts[1]);
-						order = explorer.removeFromOrder(itemId, order);
+						explorer.removeFromOrder(itemId, order);
 						System.out.println("Removed item " + itemId);
 					}
 					break;
@@ -91,12 +132,12 @@ public class ClientTest {
 
 				case "pc":
 				case "printcart":
-					System.out.println(explorer.printCart());
+					System.out.println(explorer.printCart(cart));
 					break;
 
 				case "prc":
 				case "pricecart":
-					System.out.println("Cart Total Price: " + explorer.getCartTotalPrice());
+					System.out.println("Cart Total Price: " + explorer.getCartTotalPrice(cart));
 					break;
 
 				case "pro":
@@ -136,31 +177,9 @@ public class ClientTest {
 
 				case "ro":
 				case "removeorder":
-					cart = explorer.removeOrder(order);
+					explorer.removeOrder(order);
 					order = null;
 					System.out.println("Removed current order");
-					break;
-
-				case "all":
-				case "allergens":
-					if (parts.length < 2) {
-						System.out.println("Usage: all <item name>");
-					} else {
-						String itemName = String.join(" ", Arrays.copyOfRange(parts, 1, parts.length));
-						String output = allergens.searchAllergens(itemName);
-						System.out.println(output);
-					}
-					break;
-
-				case "i":
-				case "ingredients":
-					if (parts.length < 2) {
-						System.out.println("Usage: i <item name>");
-					} else {
-						String itemName = String.join(" ", Arrays.copyOfRange(parts, 1, parts.length));
-						String ingredients = allergens.searchIngredients(itemName);
-						System.out.println(ingredients);
-					}
 					break;
 
 				default:
@@ -169,7 +188,6 @@ public class ClientTest {
 				}
 			} catch (Exception e) {
 				System.out.println("Error: " + e.getMessage());
-				e.printStackTrace();
 			}
 		}
 	}
@@ -187,4 +205,5 @@ public class ClientTest {
 				+ "  i <item>      - search ingredients for an item\n" + "  help          - show this help\n"
 				+ "  q             - quit");
 	}
+
 }
