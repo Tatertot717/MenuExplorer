@@ -9,8 +9,8 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>menuexplorer-client</module>
-		<module>menuexplorer-server</module>
+		<module>MenuExplorer-client</module>
+		<module>MenuExplorer-server</module>
 	</modules>
 
 	<dependencyManagement>
