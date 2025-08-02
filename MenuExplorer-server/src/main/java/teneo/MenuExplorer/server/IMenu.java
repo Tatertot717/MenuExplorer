@@ -46,6 +46,7 @@ public interface IMenu {
 	 *
 	 * @param ids   the list of item IDs to add
 	 * @param order the current order to modify
+	 * @return the updated order list with added items
 	 */
 	List<Integer> addMultipleToOrder(List<Integer> ids, List<Integer> order);
 
@@ -54,6 +55,7 @@ public interface IMenu {
 	 *
 	 * @param id    the ID of the item to add
 	 * @param order the current order to modify
+	 * @return the updated order list with the added item
 	 */
 	List<Integer> addToOrder(int id, List<Integer> order);
 
@@ -75,10 +77,9 @@ public interface IMenu {
 
 	/**
 	 * Calculates the total price of all orders in the cart.
-	 * 
-	 * @param cart
 	 *
-	 * @return the total cart price
+	 * @param cart the list of all orders
+	 * @return the total price of all orders combined
 	 */
 	int getCartTotalPrice(List<List<Integer>> cart);
 
@@ -134,6 +135,7 @@ public interface IMenu {
 	/**
 	 * Prints all orders in the cart in a human-readable format.
 	 *
+	 * @param cart the list of all orders in the cart
 	 * @return a formatted string showing each order and the cart total
 	 */
 	String printCart(List<List<Integer>> cart);
@@ -161,6 +163,7 @@ public interface IMenu {
 	 *
 	 * @param id    the ID of the item to remove
 	 * @param order the current order to modify
+	 * @return the updated order list after removal
 	 */
 	List<Integer> removeFromOrder(int id, List<Integer> order);
 
@@ -169,13 +172,14 @@ public interface IMenu {
 	 *
 	 * @param ids   the list of item IDs to remove
 	 * @param order the current order to modify
+	 * @return the updated order list after removals
 	 */
 	List<Integer> removeMultipleFromOrder(List<Integer> ids, List<Integer> order);
 
 	/**
 	 * Removes the given order from the cart.
 	 *
-	 * @param order the order to remove
+	 * @param order the order to remove from the cart
 	 */
 	void removeOrder(List<Integer> order);
 

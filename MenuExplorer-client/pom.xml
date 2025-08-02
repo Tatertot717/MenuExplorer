@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>teneo</groupId>
 		<artifactId>MenuExplorer</artifactId>
-		<version>1.1.0</version>
+		<version>2.0.0</version>
 	</parent>
 
 	<artifactId>menuexplorer-client</artifactId>
@@ -22,14 +22,12 @@
 		<dependency>
 			<groupId>io.github.openfeign</groupId>
 			<artifactId>feign-core</artifactId>
-			<version>11.10</version>
 		</dependency>
 
 		<!-- Spring Cloud OpenFeign Core -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-openfeign-core</artifactId>
-			<version>3.1.8</version>
 		</dependency>
 
 		<!-- Feign Gson Converter -->
@@ -42,7 +40,6 @@
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
-			<version>2.10.1</version>
 		</dependency>
 	</dependencies>
 
@@ -64,7 +61,7 @@
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>
-										teneo.MenuExplorer.client.MenuExplorer</mainClass>
+										teneo.MenuExplorer.client.ClientTest</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>

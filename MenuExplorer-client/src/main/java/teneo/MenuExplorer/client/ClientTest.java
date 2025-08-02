@@ -1,5 +1,8 @@
 package teneo.MenuExplorer.client;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -16,11 +19,19 @@ public class ClientTest {
 	private static List<List<Integer>> cart;
 
 	public static void main(String[] args) {
-		String baseUrl = "http://localhost:8080";
+		String baseUrl = "https://localhost:8443";
+		String apiKey;
 
-		explorer = new MenuExplorer(baseUrl);
+		try {
+			apiKey = Files.readString(Paths.get("./apikey.txt")).trim();
+		} catch (IOException e) {
+			System.err.println("Failed to read API key: " + e.getMessage());
+			return;
+		}
+
+		explorer = new MenuExplorer(baseUrl, apiKey);
 		cart = explorer.getCart();
-		allergens = new Allergens(baseUrl);
+		allergens = new Allergens(baseUrl, apiKey);
 
 		System.out.println("Menu Explorer CLI started. Type 'help' for list of commands.");
 

@@ -8,6 +8,7 @@ import org.springframework.cloud.openfeign.support.SpringMvcContract;
 
 import com.google.gson.JsonObject;
 
+import feign.Client;
 import feign.Feign;
 import feign.gson.GsonEncoder;
 
@@ -25,11 +26,18 @@ public class MenuExplorer {
 	 * Constructs a new MenuExplorer instance that connects to the given server URL.
 	 *
 	 * @param baseUrl the base URL of the menu server API
+	 * @param apiKey  the API key used for authenticating requests
 	 */
-	public MenuExplorer(String baseUrl) {
-		explorer = Feign.builder().contract(new SpringMvcContract()).encoder(new GsonEncoder())
-				.decoder(new StringDecoder()).requestInterceptor(new JsonRequestInterceptor())
-				.target(FMenu.class, baseUrl);
+	public MenuExplorer(String baseUrl, String apiKey) {
+		try {
+			Client unsafeClient = UnsafeSslClient.create(); // REMOVE UNSAFE CLIENT IN PROD, NEEDED FOR SELFSIGN!!!
+															// //TODO
+			explorer = Feign.builder().client(unsafeClient).contract(new SpringMvcContract()).encoder(new GsonEncoder())
+					.decoder(new StringDecoder()).requestInterceptor(new ApiKeyInterceptor(apiKey))
+					.requestInterceptor(new JsonRequestInterceptor()).target(FMenu.class, baseUrl);
+		} catch (Exception e) {
+			throw new RuntimeException("Failed to create unsafe SSL client", e);
+		}
 	}
 
 	/**

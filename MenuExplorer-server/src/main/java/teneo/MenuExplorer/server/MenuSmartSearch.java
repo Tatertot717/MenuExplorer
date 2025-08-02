@@ -65,7 +65,7 @@ public class MenuSmartSearch {
 
 	private static INDArray embedSentence(String sentence) {
 		sentence = sentence.replaceAll("[^\\p{ASCII}]", " ");
-		
+
 		String[] tokens = sentence.toLowerCase().split("\\s+");
 		List<String> validTokens = new ArrayList<>();
 		for (String token : tokens) {

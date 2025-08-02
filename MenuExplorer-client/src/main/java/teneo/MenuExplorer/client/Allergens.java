@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.springframework.cloud.openfeign.support.SpringMvcContract;
 
+import feign.Client;
 import feign.Feign;
 import feign.gson.GsonEncoder;
 
@@ -20,11 +21,19 @@ public class Allergens {
 	 * up Feign with custom encoders, decoders, and interceptors.
 	 *
 	 * @param baseUrl The base URL of the remote allergen service.
+	 * @param apiKey  The API key used for authenticating requests.
 	 */
-	public Allergens(String baseUrl) {
-		allergens = Feign.builder().contract(new SpringMvcContract()).encoder(new GsonEncoder())
-				.decoder(new StringDecoder()).requestInterceptor(new JsonRequestInterceptor())
-				.target(FAllergens.class, baseUrl);
+	public Allergens(String baseUrl, String apiKey) {
+		try {
+			Client unsafeClient = UnsafeSslClient.create(); // REMOVE UNSAFE CLIENT IN PROD, NEEDED FOR SELFSIGN!!!
+															// //TODO
+			allergens = Feign.builder().client(unsafeClient).contract(new SpringMvcContract())
+					.encoder(new GsonEncoder()).decoder(new StringDecoder())
+					.requestInterceptor(new ApiKeyInterceptor(apiKey)).requestInterceptor(new JsonRequestInterceptor())
+					.target(FAllergens.class, baseUrl);
+		} catch (Exception e) {
+			throw new RuntimeException("Failed to create unsafe SSL client", e);
+		}
 	}
 
 	/**

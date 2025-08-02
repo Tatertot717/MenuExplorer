@@ -1,5 +1,6 @@
 glove*
-
+apikeys.txt
+keystore.p12
 
 # Maven build directory
 /target/
